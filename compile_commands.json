@@ -1,7 +1,7 @@
 [
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -17,13 +17,123 @@
       "srcs/ft_new_stack.o",
       "srcs/ft_new_stack.c"
     ],
-    "directory": "/root/code/push_swap",
-    "file": "/root/code/push_swap/srcs/ft_new_stack.c",
-    "output": "/root/code/push_swap/srcs/ft_new_stack.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_stack_push.o",
+      "srcs/ft_stack_push.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_stack_pop.o",
+      "srcs/ft_stack_pop.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_stack_swap.o",
+      "srcs/ft_stack_swap.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_putchar.o",
+      "srcs/ft_putchar.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_putstr.o",
+      "srcs/ft_putstr.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -39,13 +149,13 @@
       "srcs/main.o",
       "srcs/main.c"
     ],
-    "directory": "/root/code/push_swap",
-    "file": "/root/code/push_swap/srcs/main.c",
-    "output": "/root/code/push_swap/srcs/main.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/main.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/main.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -57,13 +167,13 @@
       "srcs/ft_add_back.o",
       "srcs/ft_add_back.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_add_back.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_add_back.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -75,13 +185,13 @@
       "srcs/ft_clear.o",
       "srcs/ft_clear.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_clear.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_clear.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -93,13 +203,13 @@
       "srcs/ft_concat.o",
       "srcs/ft_concat.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_concat.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_concat.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -111,13 +221,13 @@
       "srcs/ft_del.o",
       "srcs/ft_del.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_del.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_del.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -129,13 +239,13 @@
       "srcs/ft_list_copy.o",
       "srcs/ft_list_copy.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list_copy.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list_copy.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -147,13 +257,13 @@
       "srcs/ft_list_iter.o",
       "srcs/ft_list_iter.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list_iter.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list_iter.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -165,13 +275,13 @@
       "srcs/ft_list.o",
       "srcs/ft_list.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -183,13 +293,13 @@
       "srcs/ft_new_element.o",
       "srcs/ft_new_element.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_new_element.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_new_element.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -201,13 +311,13 @@
       "srcs/ft_get_list_element.o",
       "srcs/ft_get_list_element.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_get_list_element.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_get_list_element.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_list_element.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_list_element.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -219,13 +329,13 @@
       "srcs/ft_search.o",
       "srcs/ft_search.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_search.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_search.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.o"
   },
   {
     "arguments": [
-      "/usr/sbin/clang",
+      "/usr/bin/clang",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -237,8 +347,8 @@
       "srcs/ft_insert_before.o",
       "srcs/ft_insert_before.c"
     ],
-    "directory": "/root/code/push_swap/libs/ft_list",
-    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_insert_before.c",
-    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_insert_before.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.o"
   }
 ]
