@@ -5,3 +5,7 @@ push_swap
 
 # Library
 *.a
+
+
+# Cache
+.cache/
