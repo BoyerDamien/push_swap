@@ -1,0 +1,244 @@
+[
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/ft_new_stack.o",
+      "srcs/ft_new_stack.c"
+    ],
+    "directory": "/root/code/push_swap",
+    "file": "/root/code/push_swap/srcs/ft_new_stack.c",
+    "output": "/root/code/push_swap/srcs/ft_new_stack.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
+      "srcs/main.o",
+      "srcs/main.c"
+    ],
+    "directory": "/root/code/push_swap",
+    "file": "/root/code/push_swap/srcs/main.c",
+    "output": "/root/code/push_swap/srcs/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_add_back.o",
+      "srcs/ft_add_back.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_add_back.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_add_back.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_clear.o",
+      "srcs/ft_clear.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_clear.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_clear.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_concat.o",
+      "srcs/ft_concat.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_concat.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_concat.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_del.o",
+      "srcs/ft_del.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_del.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_del.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_list_copy.o",
+      "srcs/ft_list_copy.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list_copy.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list_copy.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_list_iter.o",
+      "srcs/ft_list_iter.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list_iter.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list_iter.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_list.o",
+      "srcs/ft_list.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_list.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_list.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_new_element.o",
+      "srcs/ft_new_element.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_new_element.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_new_element.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_get_list_element.o",
+      "srcs/ft_get_list_element.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_get_list_element.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_get_list_element.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_search.o",
+      "srcs/ft_search.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_search.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_search.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/clang",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_insert_before.o",
+      "srcs/ft_insert_before.c"
+    ],
+    "directory": "/root/code/push_swap/libs/ft_list",
+    "file": "/root/code/push_swap/libs/ft_list/srcs/ft_insert_before.c",
+    "output": "/root/code/push_swap/libs/ft_list/srcs/ft_insert_before.o"
+  }
+]

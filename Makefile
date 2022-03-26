@@ -9,15 +9,28 @@
 #    Updated: 2020/05/12 16:19:53 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+################################################################################
+#									LIBS
+################################################################################
+
+LIBRARY_LINKS		=	-L ./libs/ft_list/ -lftlist	
+LIBRARY_INCLUDES	=  	-I ./libs/ft_list/includes 
+LIBRARY_HEADERS		=	./libs/ft_list/includes/ft_list.h
+
+################################################################################
+#									SOURCES
+################################################################################
+
 NAME    			=	push_swap
 
 MAIN				= 	srcs/main.c
 
-SRCS    			= 	
+SRCS    			= ft_new_stack
 
-INCLUDES			=	-I ./includes
+INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 
-HEADERS				=	./includes/push_swap.h
+HEADERS				=	./includes/push_swap.h ${LIBRARY_HEADERS}
 
 OBJS_MAIN			= 	$(MAIN:.c=.o)
 OBJS				= 	$(FIL:.c=.o)
@@ -27,6 +40,7 @@ FIL = $(addsuffix .c, $(addprefix srcs/, $(SRCS)))
 CFLAGS  			= 	-Werror -Wall -Wextra -std=c99 -O3 -g ${INCLUDES}
 CC     				= 	clang
 RM      			= 	rm -f
+
 
 ################################################################################
 #								Basic Rules
@@ -38,16 +52,17 @@ RM      			= 	rm -f
 all     :	$(NAME)
 
 $(NAME) : $(lib) $(OBJS) $(OBJS_MAIN) 
-	$(MAKE) -C ./lib/lib_ft_list
-	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${OBJS_MAIN}
+	$(MAKE) -C ./libs/ft_list
+	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${OBJS_MAIN} ${LIBRARY_LINKS}
 
 clean   :
 	$(RM) $(OBJS)
 	$(RM) ${OBJS_MAIN}
+	$(MAKE) clean -C ./libs/ft_list
 
 fclean  : clean
 	$(RM) $(NAME)
-	$(MAKE) fclean -C ./lib/lib_ft_list
+	$(MAKE) fclean -C ./libs/ft_list
 
 re      :	fclean all
 
