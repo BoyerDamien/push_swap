@@ -1,0 +1,7 @@
+# Binary
+push_swap
+*.o
+
+
+# Library
+*.a
