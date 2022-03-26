@@ -7,5 +7,9 @@ t_stack ft_new_stack(char stack_name) {
     new.list = ft_list();
     new.pop = ft_stack_pop;
     new.push = ft_stack_push;
+    new.push_to = ft_stack_push_to;
+    new.empty = ft_stack_isempty;
+    new.reverse_rotate = ft_stack_reverse_rotate;
+    new.rotate = ft_stack_rotate;
     return new;
 }
