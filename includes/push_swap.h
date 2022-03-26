@@ -20,7 +20,7 @@ typedef struct s_stack
     void (*swap)(struct s_stack*);
     void (*rotate)(struct s_stack*);
     void (*reverse_rotate)(struct s_stack*);
-    void (*push_to)(struct s_stack*);
+    void (*push_to)(struct s_stack*, struct s_stack*);
     t_bool (*empty)();
 } t_stack;
 
