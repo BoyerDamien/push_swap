@@ -1,6 +1,16 @@
+#include "ft_list.h"
 #include "push_swap.h"
 
 
-void ft_stack_pop(t_stack *self) {
-    self->list.remove(&self->list, self->list.first);
+t_element *ft_stack_pop(t_stack *self)
+{
+    t_element *result;
+    
+    if (!self->empty())
+    {
+        result = ft_new_element(self->list.first->content);
+        self->list.remove(&self->list, self->list.first);
+        return result;
+    }
+    return NULL;
 }

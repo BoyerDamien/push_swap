@@ -1,16 +1,30 @@
+#include "ft_list.h"
 #include "push_swap.h"
+#include <stdlib.h>
 
-void ft_stack_swap(t_stack *self) {
+static void clean_element(t_element *element)
+{
+    if (element != NULL)
+    {
+        free(element->content);
+        free(element);
+    }
+}
+void ft_stack_swap(t_stack *self)
+{
+    t_element *first;
     t_element *second;
 
     if (self->list.size >= 2)
     {
-        second = self->list.first->next;
-        second->previous = self->list.first->previous;
-        second->next->previous = self->list.first;
-        second->next = self->list.first;
-        self->list.first->previous->next = second;
-        self->list.first->previous = second;
-        self->list.first = second;
+        first = self->pop(self);
+        second = self->pop(self);
+
+        if (first != NULL)
+            self->push(self, second->content);
+        if (second != NULL)
+            self->push(self, first->content);
+        clean_element(second);
+        clean_element(second);
     }
 }

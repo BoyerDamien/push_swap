@@ -16,7 +16,7 @@ typedef struct s_stack
     char stack_name;
 
     void (*push)(struct s_stack*, void *);
-    void (*pop)(struct s_stack*);
+    t_element *(*pop)(struct s_stack*);
     void (*swap)(struct s_stack*);
     void (*rotate)(struct s_stack*);
     void (*reverse_rotate)(struct s_stack*);
@@ -30,11 +30,12 @@ t_stack ft_new_stack(char);
 
 // Stack method
 void ft_stack_push(t_stack *self, void *element);
-void ft_stack_pop(t_stack *self);
+t_element *ft_stack_pop(t_stack *self);
 void ft_stack_swap(t_stack *self);
 void ft_stack_rotate(t_stack *self);
 void ft_stack_reverse_rotate(t_stack *self);
 void ft_stack_push_to(t_stack *self, t_stack *other);
+
 t_bool ft_stack_isempty(t_stack *self);
 
 void ft_putchar(char c);
