@@ -13,5 +13,6 @@ t_stack ft_new_stack(char stack_name) {
     new.rotate = ft_stack_rotate;
     new.clear = ft_stack_clear;
     new.show = ft_stack_show;
+    new.is_sorted = ft_is_sorted;
     return new;
 }
