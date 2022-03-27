@@ -4,7 +4,10 @@
 static void print_one_element(t_element *element) 
 {
     if (element && element->content)
-        ft_putnbr(*((int*)element->content));
+    {
+        ft_putstr(element->content);
+        ft_putchar('\n');
+    }
 }
 
 void ft_stack_show(t_stack *self)
