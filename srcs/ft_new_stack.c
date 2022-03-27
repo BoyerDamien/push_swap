@@ -11,5 +11,7 @@ t_stack ft_new_stack(char stack_name) {
     new.empty = ft_stack_isempty;
     new.reverse_rotate = ft_stack_reverse_rotate;
     new.rotate = ft_stack_rotate;
+    new.clear = ft_stack_clear;
+    new.show = ft_stack_show;
     return new;
 }

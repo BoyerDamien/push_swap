@@ -10,6 +10,7 @@ static void clean_element(t_element *element)
         free(element);
     }
 }
+
 void ft_stack_swap(t_stack *self)
 {
     t_element *first;
