@@ -43,8 +43,9 @@ typedef struct s_stack
 } t_stack;
 
 
-// Stack constructor
-t_stack ft_new_stack(char);
+// Stack constructors
+t_stack ft_new_stack(char stack_name);
+t_stack ft_new_stack_with_args(char stack_name, int argc, char **argv);
 
 // Stack method
 void ft_stack_push(t_stack *self, void *element);
@@ -61,7 +62,7 @@ t_bool ft_stack_isempty(t_stack *self);
 void ft_putchar(char c);
 void ft_putstr(char *str);
 
-int ft_atoi(char *str);
+long int ft_atoi(char *str);
 
 t_bool ft_isspace(char c);
 t_bool ft_isdigit(char c);

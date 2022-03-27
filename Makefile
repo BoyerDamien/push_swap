@@ -27,6 +27,7 @@ NAME    			=	push_swap
 MAIN				= 	srcs/main.c
 
 SRCS    			= ft_new_stack\
+					  ft_new_stack_with_args\
 					  ft_stack_push\
 					  ft_stack_pop\
 					  ft_stack_swap\
