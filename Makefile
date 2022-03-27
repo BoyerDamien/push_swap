@@ -35,7 +35,19 @@ SRCS    			= ft_new_stack\
 					  ft_stack_rotate\
 					  ft_stack_reverse_rotate\
 					  ft_stack_push_to\
-					  ft_stack_isempty
+					  ft_stack_isempty\
+					  ft_atoi\
+					  ft_isspace\
+					  ft_isdigit\
+					  ft_isnumber\
+					  ft_stack_clear\
+					  ft_stack_show\
+					  ft_putnbr\
+					  ft_new_error\
+					  ft_parse_args\
+					  ft_error_show\
+					  ft_strlen\
+					  ft_sort_stack
 
 INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 
