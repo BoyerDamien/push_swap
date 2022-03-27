@@ -40,6 +40,7 @@ typedef struct s_stack
     void (*clear)(struct s_stack*);
     void (*show)(struct s_stack*);
     t_bool (*empty)();
+    t_bool(*is_sorted)();
 } t_stack;
 
 
@@ -57,6 +58,7 @@ void ft_stack_push_to(t_stack *self, t_stack *other);
 void ft_stack_show(t_stack *self);
 void ft_stack_clear(t_stack *self);
 t_bool ft_stack_isempty(t_stack *self);
+t_bool ft_is_sorted(t_stack *self);
 
 // Utils
 void ft_putchar(char c);

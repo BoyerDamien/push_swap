@@ -48,7 +48,8 @@ SRCS    			= ft_new_stack\
 					  ft_parse_args\
 					  ft_error_show\
 					  ft_strlen\
-					  ft_sort_stack
+					  ft_sort_stack\
+					  ft_is_sorted
 
 INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 

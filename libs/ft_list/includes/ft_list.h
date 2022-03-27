@@ -47,9 +47,9 @@ typedef struct			s_list
 
 void					ft_add_back(t_list *list, void *content);
 void					ft_del(t_list *list, t_element *element);
-void					ft_clear(t_list *list) __attribute__((hot));
-void					ft_list_iter(t_element *element, \
-						void (*f)(t_element *element));
+void					ft_clear(t_list *list);
+void					ft_list_iter(t_element *element,void (*f)(t_element *element));
+int ft_list_iter_ret(t_element *element, int (*f)(t_element *element));
 void					ft_insert_before(t_list *list,\
 						t_element *element, void *content);
 
