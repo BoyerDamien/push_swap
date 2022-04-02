@@ -11,34 +11,22 @@
 /* ************************************************************************** */
 
 #include "ft_list.h"
-
-static inline void	correct_index(t_element *element)
-{
-	element->index--;
-}
+#include <stdlib.h>
 
 void				ft_del(t_list *list, t_element *element)
 {
-	if (list->size && element)
-	{
-		if (element->previous && element->next)
-		{
-			list->iter(element->next, correct_index);
-			element->previous->next = element->next;
-			element->next->previous = element->previous;
-		}
-		else if (!element->previous && element->next)
-		{
-			list->iter(element->next, correct_index);
-			element->next->previous = NULL;
-			list->first = element->next;
-		}
-		else if (element->previous && !element->next)
-		{
-			element->previous->next = NULL;
-			list->last = element->previous;
-		}
-		free(element);
-		list->size--;
-	}
+
+    if (element)
+    {
+        if (list->size > 1)
+        {
+            element->previous->next = element->next;
+            element->next->previous = element->previous;
+            if (element == list->first)
+                list->first = element->next;
+        }
+        free(element->content);
+        free(element);
+        list->size--;
+    }
 }

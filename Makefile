@@ -49,7 +49,10 @@ SRCS    			= ft_new_stack\
 					  ft_error_show\
 					  ft_strlen\
 					  ft_sort_stack\
-					  ft_is_sorted
+					  ft_is_sorted\
+					  ft_stack_is_swappable\
+					  ft_less_than\
+					  ft_greater_than
 
 INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 

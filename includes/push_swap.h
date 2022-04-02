@@ -39,18 +39,19 @@ typedef struct s_stack
     void (*push_to)(struct s_stack*, struct s_stack*);
     void (*clear)(struct s_stack*);
     void (*show)(struct s_stack*);
-    t_bool (*empty)();
-    t_bool(*is_sorted)();
+    t_bool (*empty)(struct s_stack*);
+    t_bool(*is_sorted)(struct s_stack*);
+    t_bool(*is_swappable)(struct s_stack *);
 } t_stack;
 
 
 // Stack constructors
-t_stack ft_new_stack(char stack_name);
-t_stack ft_new_stack_with_args(char stack_name, int argc, char **argv);
+t_stack *ft_new_stack(char stack_name);
+t_stack *ft_new_stack_with_args(char stack_name, int argc, char **argv);
 
 // Stack method
-void ft_stack_push(t_stack *self, void *element);
 t_element *ft_stack_pop(t_stack *self);
+void ft_stack_push(t_stack *self, void *element);
 void ft_stack_swap(t_stack *self);
 void ft_stack_rotate(t_stack *self);
 void ft_stack_reverse_rotate(t_stack *self);
@@ -59,10 +60,13 @@ void ft_stack_show(t_stack *self);
 void ft_stack_clear(t_stack *self);
 t_bool ft_stack_isempty(t_stack *self);
 t_bool ft_is_sorted(t_stack *self);
+t_bool ft_stack_is_swappable(t_stack *self);
 
 // Utils
 void ft_putchar(char c);
 void ft_putstr(char *str);
+t_bool ft_less_than(char *n1, char *n2);
+t_bool ft_greater_than(char *n1, char *n2);
 
 long int ft_atoi(char *str);
 
@@ -74,6 +78,6 @@ size_t ft_strlen(char *str);
 
 t_error *ft_check_args(int argc, char **argv);
 
-t_error *ft_sort_stack(t_stack a, t_stack b);
+t_error *ft_sort_stack(t_stack *a, t_stack *b);
 
 #endif

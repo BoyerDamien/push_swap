@@ -22,9 +22,9 @@ t_list		ft_list(void)
 	new.concat = ft_concat;
 	new.remove = ft_del;
 	new.iter = ft_list_iter;
-	new.get = ft_get_list_element;
 	new.copy = ft_list_copy;
 	new.search = ft_search;
 	new.insert_before = ft_insert_before;
+    new.iter_with_ret = ft_list_iter_ret;
 	return (new);
 }

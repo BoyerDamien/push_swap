@@ -1,12 +1,15 @@
 #include "ft_list.h"
 
-int ft_list_iter_ret(t_element *element, int (*f)(t_element *element))
+int ft_list_iter_ret(t_list *self, int (*f)(t_element *element))
 {
-	if (element)
+    t_element *element;
+
+    element = self->first;
+    while (element && element->next != self->first)
     {
-        if (f(element))
-		    return ft_list_iter_ret(element->next, f);
-        return 0;
+		if (f(element) < 1)
+            return 0;
+        element = element->next;
     }
     return 1;
 }
