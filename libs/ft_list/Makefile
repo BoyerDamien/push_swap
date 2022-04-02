@@ -20,10 +20,10 @@ SRCS 	=	srcs/ft_add_back.c\
 		srcs/ft_list_iter.c\
 		srcs/ft_list.c\
 		srcs/ft_new_element.c\
-		srcs/ft_get_list_element.c\
 		srcs/ft_search.c\
 		srcs/ft_insert_before.c\
-		srcs/ft_list_iter_ret.c
+		srcs/ft_list_iter_ret.c\
+		srcs/ft_list_get_last.c
 
 OBJS    =       $(SRCS:.c=.o)
 HEADERS = -I ./includes/

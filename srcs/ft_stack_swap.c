@@ -21,11 +21,11 @@ void ft_stack_swap(t_stack *self)
         first = self->pop(self);
         second = self->pop(self);
 
-        if (first != NULL)
-            self->push(self, second->content);
         if (second != NULL)
+            self->push(self, second->content);
+        if (first != NULL)
             self->push(self, first->content);
-        clean_element(second);
+        clean_element(first);
         clean_element(second);
     }
 }

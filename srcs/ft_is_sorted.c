@@ -3,12 +3,12 @@
 
 static int is_sorted(t_element *element)
 {
-    return ft_atoi(element->previous->content) <= ft_atoi(element->content);
+    return ft_less_than(element->content, element->next->content);
 }
 
 t_bool ft_is_sorted(t_stack *self)
 {
     if (self->list.size >= 2)
-        return ft_list_iter_ret(self->list.first->next, is_sorted);
+        return self->list.iter_with_ret(&self->list, is_sorted);
     return true;
 }

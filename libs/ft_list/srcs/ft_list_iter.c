@@ -11,12 +11,19 @@
 /* ************************************************************************** */
 
 #include "ft_list.h"
+#include <stdio.h>
 
-void	ft_list_iter(t_element *element, void (*f)(t_element *element))
+void	ft_list_iter(t_list *self, void (*f)(t_element *element))
 {
-	if (element)
-	{
+    t_element *element;
+    int i;
+
+    i = 0;
+    element = self->first;
+    while (element && i < self->size)
+    {
 		f(element);
-		ft_list_iter(element->next, f);
-	}
+        element = element->next;
+        i++;
+    }
 }

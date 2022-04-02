@@ -18,7 +18,7 @@ void ft_stack_show(t_stack *self)
         ft_putchar(self->stack_name);
         ft_putchar('\n');
         ft_putstr("------------------------------------------------\n");
-        self->list.iter(self->list.first, print_one_element);
+        self->list.iter(&self->list, print_one_element);
         ft_putchar('\n');
         ft_putstr("------------------------------------------------\n");
     }
