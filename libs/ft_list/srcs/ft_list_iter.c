@@ -16,11 +16,14 @@
 void	ft_list_iter(t_list *self, void (*f)(t_element *element))
 {
     t_element *element;
+    int i;
 
+    i = 0;
     element = self->first;
-    while (element && element->next != self->first)
+    while (element && i < self->size)
     {
 		f(element);
         element = element->next;
+        i++;
     }
 }

@@ -1,7 +1,7 @@
 #include "push_swap.h"
 #include <stdlib.h>
 
-t_stack *ft_newstack(char stack_name) 
+t_stack *ft_new_stack(char stack_name) 
 {
     t_stack *new;
 

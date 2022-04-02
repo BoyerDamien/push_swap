@@ -36,7 +36,6 @@ void				ft_insert_before(t_list *list, t_element *element,\
             new_elem->next = new_elem;
             new_elem->previous = new_elem;
             list->first = new_elem;
-            list->last = new_elem;
         }
        list->size++;
     }

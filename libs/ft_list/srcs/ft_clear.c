@@ -14,13 +14,8 @@
 
 void		ft_clear(t_list *list)
 {
-	t_element *new_first;
 
-	if (list->size && list->first)
-	{
-		new_first = list->first->next;
-		list->remove(list, list->first);
-		list->first = new_first;
-		ft_clear(list);
-	}
+    while (list && list->size) {
+        list->remove(list, list->last(list));
+    }
 }

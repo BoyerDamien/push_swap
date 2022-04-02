@@ -28,7 +28,6 @@ typedef struct			s_list
 {
 	int					size;
 	struct s_element	*first;
-	struct s_element	*last;
 
 	void				(*append)(struct s_list*, void*);
 	void				(*clear)(struct s_list*);
@@ -39,6 +38,7 @@ typedef struct			s_list
 	struct s_list		(*concat)(struct s_list*, struct s_list*);
 	struct s_list		(*copy)(struct s_list*);
 	struct s_list		(*map)(struct s_list*, void *(*f)(t_element*));
+    t_element           *(*last)(struct s_list*);
 
 	t_element			*(*get)(struct s_list*, int);
 	t_element			*(*search)(t_element*, void *,\
@@ -52,6 +52,7 @@ void					ft_list_iter(t_list *self, void (*f)(t_element *element));
 int                     ft_list_iter_ret(t_list *self, int (*f)(t_element *element));
 void					ft_insert_before(t_list *list,\
 						t_element *element, void *content);
+t_element               *ft_list_get_last(t_list *self);
 
 t_element				*ft_search(t_element *element, void *content,\
 						int (*f)(t_element *element, void *content));

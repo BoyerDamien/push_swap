@@ -11,13 +11,14 @@
 /* ************************************************************************** */
 
 #include "ft_list.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 void				ft_del(t_list *list, t_element *element)
 {
-
     if (element)
     {
+        printf("size = %d\n", list->size);
         if (list->size > 1)
         {
             element->previous->next = element->next;
@@ -25,7 +26,6 @@ void				ft_del(t_list *list, t_element *element)
             if (element == list->first)
                 list->first = element->next;
         }
-        free(element->content);
         free(element);
         list->size--;
     }

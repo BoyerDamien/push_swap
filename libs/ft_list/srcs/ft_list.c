@@ -26,5 +26,6 @@ t_list		ft_list(void)
 	new.search = ft_search;
 	new.insert_before = ft_insert_before;
     new.iter_with_ret = ft_list_iter_ret;
+    new.last = ft_list_get_last;
 	return (new);
 }

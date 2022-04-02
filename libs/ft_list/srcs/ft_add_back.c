@@ -19,11 +19,10 @@ void		ft_add_back(t_list *list, void *content)
 	new_elem = ft_new_element(content);
 	if (list->size > 0)
 	{
-		new_elem->previous = list->last;
+		new_elem->previous = list->last(list);
         new_elem->next = list->first;
-        list->last->next = new_elem;
+        list->last(list)->next = new_elem;
         list->first->previous=new_elem;
-        list->last=new_elem;
 		list->size++;
 	}
 	else
@@ -32,6 +31,5 @@ void		ft_add_back(t_list *list, void *content)
         new_elem->next = new_elem;
         new_elem->previous= new_elem;
 		list->first = new_elem;
-		list->last = new_elem;
 	}
 }
