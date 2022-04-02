@@ -18,7 +18,6 @@ void				ft_del(t_list *list, t_element *element)
 {
     if (element)
     {
-        printf("size = %d\n", list->size);
         if (list->size > 1)
         {
             element->previous->next = element->next;

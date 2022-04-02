@@ -4,9 +4,15 @@
 
 void ft_stack_push_to(t_stack *self, t_stack *other)
 {
+    t_element *tmp;
+
     if (!self->empty(self))
     {
-        other->push(other, self->list.first->content);
-        self->list.remove(&self->list, self->list.first);
+        tmp = self->pop(self);
+        if (tmp && other)
+        {
+            other->push(other, tmp->content);
+            free(tmp);
+        }
     }
 }

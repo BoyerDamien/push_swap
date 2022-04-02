@@ -30,6 +30,7 @@ typedef struct s_stack
 {
     t_list list;
     char stack_name;
+    long int min_value;
 
     void (*push)(struct s_stack*, void *);
     t_element *(*pop)(struct s_stack*);
@@ -42,6 +43,7 @@ typedef struct s_stack
     t_bool (*empty)(struct s_stack*);
     t_bool(*is_sorted)(struct s_stack*);
     t_bool(*is_swappable)(struct s_stack *);
+    t_bool (*is_mergeable)(struct s_stack *, struct s_stack *);
 } t_stack;
 
 
@@ -61,6 +63,8 @@ void ft_stack_clear(t_stack *self);
 t_bool ft_stack_isempty(t_stack *self);
 t_bool ft_is_sorted(t_stack *self);
 t_bool ft_stack_is_swappable(t_stack *self);
+t_bool ft_stack_is_mergeable(t_stack *b, t_stack *a);
+long int ft_stack_min(t_stack *stack);
 
 // Utils
 void ft_putchar(char c);
