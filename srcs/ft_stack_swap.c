@@ -2,15 +2,6 @@
 #include "push_swap.h"
 #include <stdlib.h>
 
-static void clean_element(t_element *element)
-{
-    if (element != NULL)
-    {
-        free(element->content);
-        free(element);
-    }
-}
-
 void ft_stack_swap(t_stack *self)
 {
     t_element *first;
@@ -21,11 +12,11 @@ void ft_stack_swap(t_stack *self)
         first = self->pop(self);
         second = self->pop(self);
 
-        if (second != NULL)
-            self->push(self, second->content);
         if (first != NULL)
             self->push(self, first->content);
-        clean_element(first);
-        clean_element(second);
+        if (second != NULL)
+            self->push(self, second->content);
+        free(first);
+        free(second);
     }
 }
