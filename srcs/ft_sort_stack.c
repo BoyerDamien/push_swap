@@ -5,7 +5,6 @@
 
 static void radix_sort(t_stack *a, t_stack *b)
 {
-    printf("test\n");
     int size;
     int i; 
     int j;
@@ -15,7 +14,7 @@ static void radix_sort(t_stack *a, t_stack *b)
     while (!a->is_sorted(a) || a->list.size == 1) {
         j = 0;
         while (j < size) {
-            int num = ft_atoi(a->list.first->content);
+            long int num = ft_atoi(a->list.first->content);
             if ((num >= 0 && (num>>i)&1) || (num < 0 && (num<<i)&1)){
                 a->rotate(a);
             }
