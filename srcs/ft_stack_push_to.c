@@ -13,6 +13,9 @@ void ft_stack_push_to(t_stack *self, t_stack *other)
         {
             other->push(other, tmp->content);
             free(tmp);
+            ft_putchar('p');
+            ft_putchar(other->stack_name);
+            ft_putchar('\n');
         }
     }
 }
