@@ -45,7 +45,7 @@ static void	short_sort(t_stack *a)
 
 t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 {
-	if (!a->is_sorted(a) && a->list->size > 3)
+	if (!a->is_sorted(a) && a->list->size > 6)
 		radix_sort(a, b);
 	else
 		short_sort(a);
