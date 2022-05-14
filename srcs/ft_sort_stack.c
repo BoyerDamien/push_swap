@@ -28,12 +28,23 @@ static void radix_sort(t_stack *a, t_stack *b)
 }
 
 
+static void short_sort(t_stack *a) {
+    if(!ft_is_sorted(a)) {
+        if (ft_less_than(a->list.first->next->content, a->list.first->content))
+            a->swap(a);
+        else
+            a->reverse_rotate(a);
+        short_sort(a);
+    }
+}
+
+
 t_error *ft_sort_stack(t_stack *a, t_stack *b)
 {
-    if (!a->is_sorted(a))
+    if (!a->is_sorted(a) && a->list.size > 3)
         radix_sort(a, b);
-    // a->show(a);
-    // b->show(b);
+    else
+        short_sort(a);
     a->clear(a);
     b->clear(b);
     free(a);

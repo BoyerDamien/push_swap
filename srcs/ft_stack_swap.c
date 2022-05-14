@@ -18,5 +18,8 @@ void ft_stack_swap(t_stack *self)
             self->push(self, second->content);
         free(first);
         free(second);
+        ft_putchar('s');
+        ft_putchar(self->stack_name);
+        ft_putchar('\n');
     }
 }
