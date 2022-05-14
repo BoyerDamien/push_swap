@@ -542,56 +542,12 @@
       "./libs/ft_list/includes",
       "-c",
       "-o",
-      "srcs/ft_stack_is_swappable.o",
-      "srcs/ft_stack_is_swappable.c"
+      "srcs/ft_stack_min.o",
+      "srcs/ft_stack_min.c"
     ],
     "directory": "/root/code/push_swap",
-    "file": "/root/code/push_swap/srcs/ft_stack_is_swappable.c",
-    "output": "/root/code/push_swap/srcs/ft_stack_is_swappable.o"
-  },
-  {
-    "arguments": [
-      "/usr/sbin/clang",
-      "-Werror",
-      "-Wall",
-      "-Wextra",
-      "-std=c99",
-      "-O3",
-      "-g",
-      "-I",
-      "./includes/",
-      "-I",
-      "./libs/ft_list/includes",
-      "-c",
-      "-o",
-      "srcs/ft_less_than.o",
-      "srcs/ft_less_than.c"
-    ],
-    "directory": "/root/code/push_swap",
-    "file": "/root/code/push_swap/srcs/ft_less_than.c",
-    "output": "/root/code/push_swap/srcs/ft_less_than.o"
-  },
-  {
-    "arguments": [
-      "/usr/sbin/clang",
-      "-Werror",
-      "-Wall",
-      "-Wextra",
-      "-std=c99",
-      "-O3",
-      "-g",
-      "-I",
-      "./includes/",
-      "-I",
-      "./libs/ft_list/includes",
-      "-c",
-      "-o",
-      "srcs/ft_greater_than.o",
-      "srcs/ft_greater_than.c"
-    ],
-    "directory": "/root/code/push_swap",
-    "file": "/root/code/push_swap/srcs/ft_greater_than.c",
-    "output": "/root/code/push_swap/srcs/ft_greater_than.o"
+    "file": "/root/code/push_swap/srcs/ft_stack_min.c",
+    "output": "/root/code/push_swap/srcs/ft_stack_min.o"
   },
   {
     "arguments": [

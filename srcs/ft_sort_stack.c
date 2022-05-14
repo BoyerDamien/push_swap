@@ -3,30 +3,33 @@
 #include <stdlib.h>
 
 
-static void sort(t_stack *a, t_stack *b)
+static void radix_sort(t_stack *a, t_stack *b)
 {
-    a->show(a);
-    b->show(b);
+    printf("test\n");
+    int size;
+    int i; 
+    int j;
 
-    if (b->is_mergeable(b, a))
-    {
-        b->push_to(b, a);
-        sort(a, b);
-    }
-    else if (!ft_is_sorted(a))
-    {
-        if (a->is_swappable(a))
-            a->swap(a);
-        else if (!a->is_swappable(a) && ft_greater_than(a->list.first->content, a->list.first->next->content) && ft_atoi(a->list.first->next->content) != a->min_value)
-            a->push_to(a, b);
-        else 
-            a->rotate(a);
-        sort(a, b);
-    }
-    else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
-    {
-        a->reverse_rotate(a);
-        sort(a, b);
+    i = 0;
+    size = a->list.size;
+    while (!a->is_sorted(a) || a->list.size == 1) {
+        j = 0;
+        while (j < size) {
+            int num = ft_atoi(a->list.first->content);
+            if ((num >= 0 && (num>>i)&1) || (num < 0 && (num<<i)&1)){
+                a->rotate(a);
+            }
+            else {
+                a->push_to(a, b);
+            }
+            j++;
+        }
+        while (!b->empty(b)) {
+                b->push_to(b, a);
+        }
+        a->show(a);
+        b->show(b);
+        i++;
     }
 }
 
@@ -34,7 +37,7 @@ static void sort(t_stack *a, t_stack *b)
 t_error *ft_sort_stack(t_stack *a, t_stack *b)
 {
     if (!a->is_sorted(a))
-        sort(a, b);
+        radix_sort(a, b);
     a->show(a);
     b->show(b);
     a->clear(a);
