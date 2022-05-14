@@ -20,5 +20,7 @@ t_stack	*ft_new_stack(char stack_name)
 	new->show = ft_stack_show;
 	new->is_sorted = ft_is_sorted;
 	new->swap = ft_stack_swap;
+	new->is_mergeable = ft_stack_is_mergeable;
+	new->is_swappable = ft_stack_is_swappable;
 	return (new);
 }

@@ -3,6 +3,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+static void	sort(t_stack *a, t_stack *b)
+{
+	// a->show(a);
+	// b->show(b);
+	if (b->is_mergeable(b, a))
+	{
+		b->push_to(b, a);
+		sort(a, b);
+	}
+	else if (!ft_is_sorted(a))
+	{
+		if (a->is_swappable(a))
+			a->swap(a);
+		else if (!a->is_swappable(a) && ft_greater_than(a->list->first->content,
+					a->list->first->next->content))
+			a->push_to(a, b);
+		else
+			a->rotate(a);
+		sort(a, b);
+	}
+	else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
+	{
+		a->reverse_rotate(a);
+		sort(a, b);
+	}
+}
+
 static void	radix_sort(t_stack *a, t_stack *b)
 {
 	int			size;
@@ -45,8 +72,10 @@ static void	short_sort(t_stack *a)
 
 t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 {
-	if (!a->is_sorted(a) && a->list->size > 6)
+	if (!a->is_sorted(a) && a->list->size > 5)
 		radix_sort(a, b);
+	else if (!a->is_sorted && a->list->size > 3 && a->list->size <= 5)
+		sort(a, b);
 	else
 		short_sort(a);
 	a->clear(a);
