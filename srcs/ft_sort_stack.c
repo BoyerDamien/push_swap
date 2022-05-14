@@ -16,15 +16,20 @@ static void radix_sort(t_stack *a, t_stack *b)
         while (j < size) {
             long int num = ft_atoi(a->list.first->content) ^ INT_MIN;
             if ((num>>i)&1)
+            {
+                ft_putstr("ra\n");
                 a->rotate(a);
-            else 
+            }
+            else {
+                ft_putstr("pb\n");
                 a->push_to(a, b);
+            } 
             j++;
         }
-        while (!b->empty(b)) 
+        while (!b->empty(b)){
+                ft_putstr("pa\n");
                 b->push_to(b, a);
-        a->show(a);
-        b->show(b);
+        } 
         i++;
     }
 }
