@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2020/05/12 16:19:53 by dboyer           ###   ########.fr        #
+#    Updated: 2022/05/14 18:56:13 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ HEADERS = -I ./includes/
 
 CFLAGS  = -Werror -Wall -Wextra -O3 ${HEADERS} 
 
-CC              = clang
+CC              = gcc
 
 RM      =       rm -f
 

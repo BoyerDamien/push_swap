@@ -17,9 +17,9 @@
       "srcs/ft_new_stack.o",
       "srcs/ft_new_stack.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_stack.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_stack.o"
   },
   {
     "arguments": [
@@ -39,9 +39,9 @@
       "srcs/ft_new_stack_with_args.o",
       "srcs/ft_new_stack_with_args.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack_with_args.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack_with_args.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_stack_with_args.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_stack_with_args.o"
   },
   {
     "arguments": [
@@ -61,9 +61,9 @@
       "srcs/ft_stack_push.o",
       "srcs/ft_stack_push.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_push.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_push.o"
   },
   {
     "arguments": [
@@ -83,9 +83,9 @@
       "srcs/ft_stack_pop.o",
       "srcs/ft_stack_pop.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_pop.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_pop.o"
   },
   {
     "arguments": [
@@ -105,9 +105,9 @@
       "srcs/ft_stack_swap.o",
       "srcs/ft_stack_swap.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_swap.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_swap.o"
   },
   {
     "arguments": [
@@ -127,9 +127,9 @@
       "srcs/ft_putchar.o",
       "srcs/ft_putchar.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putchar.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putchar.o"
   },
   {
     "arguments": [
@@ -149,9 +149,9 @@
       "srcs/ft_putstr.o",
       "srcs/ft_putstr.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putstr.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putstr.o"
   },
   {
     "arguments": [
@@ -171,9 +171,9 @@
       "srcs/ft_stack_rotate.o",
       "srcs/ft_stack_rotate.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_rotate.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_rotate.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_rotate.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_rotate.o"
   },
   {
     "arguments": [
@@ -193,9 +193,9 @@
       "srcs/ft_stack_reverse_rotate.o",
       "srcs/ft_stack_reverse_rotate.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_reverse_rotate.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_reverse_rotate.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_reverse_rotate.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_reverse_rotate.o"
   },
   {
     "arguments": [
@@ -215,9 +215,9 @@
       "srcs/ft_stack_push_to.o",
       "srcs/ft_stack_push_to.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push_to.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push_to.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_push_to.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_push_to.o"
   },
   {
     "arguments": [
@@ -237,9 +237,9 @@
       "srcs/ft_stack_isempty.o",
       "srcs/ft_stack_isempty.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_isempty.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_isempty.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_isempty.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_isempty.o"
   },
   {
     "arguments": [
@@ -259,9 +259,9 @@
       "srcs/ft_atoi.o",
       "srcs/ft_atoi.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_atoi.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_atoi.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_atoi.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_atoi.o"
   },
   {
     "arguments": [
@@ -281,9 +281,9 @@
       "srcs/ft_isspace.o",
       "srcs/ft_isspace.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isspace.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isspace.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isspace.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isspace.o"
   },
   {
     "arguments": [
@@ -303,9 +303,9 @@
       "srcs/ft_isdigit.o",
       "srcs/ft_isdigit.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isdigit.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isdigit.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isdigit.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isdigit.o"
   },
   {
     "arguments": [
@@ -325,9 +325,9 @@
       "srcs/ft_isnumber.o",
       "srcs/ft_isnumber.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isnumber.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isnumber.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isnumber.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_isnumber.o"
   },
   {
     "arguments": [
@@ -347,9 +347,9 @@
       "srcs/ft_stack_clear.o",
       "srcs/ft_stack_clear.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_clear.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_clear.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_clear.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_clear.o"
   },
   {
     "arguments": [
@@ -369,9 +369,9 @@
       "srcs/ft_stack_show.o",
       "srcs/ft_stack_show.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_show.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_show.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_show.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_show.o"
   },
   {
     "arguments": [
@@ -391,9 +391,9 @@
       "srcs/ft_putnbr.o",
       "srcs/ft_putnbr.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putnbr.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putnbr.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putnbr.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_putnbr.o"
   },
   {
     "arguments": [
@@ -413,9 +413,9 @@
       "srcs/ft_new_error.o",
       "srcs/ft_new_error.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_error.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_error.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_error.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_new_error.o"
   },
   {
     "arguments": [
@@ -435,9 +435,9 @@
       "srcs/ft_parse_args.o",
       "srcs/ft_parse_args.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_parse_args.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_parse_args.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_parse_args.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_parse_args.o"
   },
   {
     "arguments": [
@@ -457,9 +457,9 @@
       "srcs/ft_error_show.o",
       "srcs/ft_error_show.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_error_show.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_error_show.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_error_show.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_error_show.o"
   },
   {
     "arguments": [
@@ -479,9 +479,9 @@
       "srcs/ft_strlen.o",
       "srcs/ft_strlen.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_strlen.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_strlen.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_strlen.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_strlen.o"
   },
   {
     "arguments": [
@@ -501,9 +501,9 @@
       "srcs/ft_sort_stack.o",
       "srcs/ft_sort_stack.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_sort_stack.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_sort_stack.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_sort_stack.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_sort_stack.o"
   },
   {
     "arguments": [
@@ -523,9 +523,9 @@
       "srcs/ft_is_sorted.o",
       "srcs/ft_is_sorted.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_is_sorted.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_is_sorted.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_is_sorted.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_is_sorted.o"
   },
   {
     "arguments": [
@@ -545,9 +545,9 @@
       "srcs/ft_less_than.o",
       "srcs/ft_less_than.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_less_than.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_less_than.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_less_than.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_less_than.o"
   },
   {
     "arguments": [
@@ -567,9 +567,9 @@
       "srcs/ft_greater_than.o",
       "srcs/ft_greater_than.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_greater_than.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_greater_than.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_greater_than.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_greater_than.o"
   },
   {
     "arguments": [
@@ -589,9 +589,9 @@
       "srcs/ft_stack_min.o",
       "srcs/ft_stack_min.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_min.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_min.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_min.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/ft_stack_min.o"
   },
   {
     "arguments": [
@@ -611,9 +611,9 @@
       "srcs/main.o",
       "srcs/main.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap",
-    "file": "/Users/dboyer/code/42/push_swap/srcs/main.c",
-    "output": "/Users/dboyer/code/42/push_swap/srcs/main.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/main.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/srcs/main.o"
   },
   {
     "arguments": [
@@ -629,9 +629,9 @@
       "srcs/ft_add_back.o",
       "srcs/ft_add_back.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_add_back.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_add_back.o"
   },
   {
     "arguments": [
@@ -647,9 +647,9 @@
       "srcs/ft_clear.o",
       "srcs/ft_clear.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_clear.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_clear.o"
   },
   {
     "arguments": [
@@ -665,9 +665,9 @@
       "srcs/ft_concat.o",
       "srcs/ft_concat.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_concat.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_concat.o"
   },
   {
     "arguments": [
@@ -683,9 +683,9 @@
       "srcs/ft_del.o",
       "srcs/ft_del.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_del.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_del.o"
   },
   {
     "arguments": [
@@ -701,9 +701,9 @@
       "srcs/ft_list_copy.o",
       "srcs/ft_list_copy.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_copy.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_copy.o"
   },
   {
     "arguments": [
@@ -719,9 +719,9 @@
       "srcs/ft_list_iter.o",
       "srcs/ft_list_iter.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_iter.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_iter.o"
   },
   {
     "arguments": [
@@ -737,9 +737,9 @@
       "srcs/ft_list.o",
       "srcs/ft_list.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list.o"
   },
   {
     "arguments": [
@@ -755,9 +755,9 @@
       "srcs/ft_new_element.o",
       "srcs/ft_new_element.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_new_element.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_new_element.o"
   },
   {
     "arguments": [
@@ -773,9 +773,9 @@
       "srcs/ft_search.o",
       "srcs/ft_search.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_search.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_search.o"
   },
   {
     "arguments": [
@@ -791,9 +791,9 @@
       "srcs/ft_insert_before.o",
       "srcs/ft_insert_before.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_insert_before.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_insert_before.o"
   },
   {
     "arguments": [
@@ -809,9 +809,9 @@
       "srcs/ft_list_iter_ret.o",
       "srcs/ft_list_iter_ret.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter_ret.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter_ret.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_iter_ret.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_iter_ret.o"
   },
   {
     "arguments": [
@@ -827,8 +827,8 @@
       "srcs/ft_list_get_last.o",
       "srcs/ft_list_get_last.c"
     ],
-    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
-    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_get_last.c",
-    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_get_last.o"
+    "directory": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list",
+    "file": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_get_last.c",
+    "output": "/mnt/nfs/homes/dboyer/code/push_swap/libs/ft_list/srcs/ft_list_get_last.o"
   }
 ]
