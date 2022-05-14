@@ -1,11 +1,10 @@
 #include "push_swap.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <limits.h>
 
 static void radix_sort(t_stack *a, t_stack *b)
 {
-    printf("test\n");
     int size;
     int i; 
     int j;
@@ -15,20 +14,22 @@ static void radix_sort(t_stack *a, t_stack *b)
     while (!a->is_sorted(a) || a->list.size == 1) {
         j = 0;
         while (j < size) {
-            int num = ft_atoi(a->list.first->content);
-            if ((num >= 0 && (num>>i)&1) || (num < 0 && (num<<i)&1)){
+            long int num = ft_atoi(a->list.first->content) ^ INT_MIN;
+            if ((num>>i)&1)
+            {
+                ft_putstr("ra\n");
                 a->rotate(a);
             }
             else {
+                ft_putstr("pb\n");
                 a->push_to(a, b);
-            }
+            } 
             j++;
         }
-        while (!b->empty(b)) {
+        while (!b->empty(b)){
+                ft_putstr("pa\n");
                 b->push_to(b, a);
-        }
-        a->show(a);
-        b->show(b);
+        } 
         i++;
     }
 }
