@@ -6,16 +6,16 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 12:01:23 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/14 10:22:21 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/05/14 18:04:33 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-void		ft_clear(t_list *list)
+void	ft_clear(t_list *list)
 {
-
-    while (list && list->size) {
-        list->remove(list, list->last(list));
-    }
+	while (list && list->size)
+	{
+		list->remove(list, list->last(list));
+	}
 }
