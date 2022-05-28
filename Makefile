@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2020/05/12 16:19:53 by dboyer           ###   ########.fr        #
+#    Updated: 2022/05/28 13:47:29 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,8 +51,7 @@ SRCS    			= ft_new_stack\
 					  ft_sort_stack\
 					  ft_is_sorted\
 					  ft_less_than\
-					  ft_greater_than\
-					  ft_stack_min
+					  ft_greater_than
 
 INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 

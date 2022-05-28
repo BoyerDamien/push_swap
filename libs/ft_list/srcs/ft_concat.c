@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 13:42:55 by dboyer            #+#    #+#             */
-/*   Updated: 2020/05/12 16:12:23 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/05/14 18:43:01 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static inline void	append(t_list *list1, t_list *list2)
 {
-	t_element *next;
+	t_element	*next;
 
 	next = list2->first;
 	while (next)
@@ -24,12 +24,12 @@ static inline void	append(t_list *list1, t_list *list2)
 	}
 }
 
-t_list				ft_concat(t_list *list1, t_list *list2)
+t_list	*ft_concat(t_list *list1, t_list *list2)
 {
-	t_list		new;
+	t_list	*new;
 
 	new = ft_list();
-	append(&new, list1);
-	append(&new, list2);
+	append(new, list1);
+	append(new, list2);
 	return (new);
 }

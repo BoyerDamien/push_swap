@@ -1,0 +1,822 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sat May 14 18:56:40 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 56)
+INCLUDES = -I ./includes/ ${LIBRARY_INCLUDES}
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /mnt/nfs/homes/dboyer/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /mnt/nfs/homes/dboyer/code/push_swap
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 67)
+RM = rm -f
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"f62d0d328ea2a469bad3c39b06263023.fr","_translationsConfigFile":"/mnt/nfs/homes/dboyer/.config/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/tcf.json","_cacheRoot":"/mnt/nfs/homes/dboyer/.config/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr","_resolvedLanguagePackCoreLocation":"/mnt/nfs/homes/dboyer/.config/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"/mnt/nfs/homes/dboyer/.config/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# makefile (from 'Makefile', line 65)
+CFLAGS = -Werror -Wall -Wextra -std=c99 -g3 ${INCLUDES}
+# environment
+JOURNAL_STREAM = 9:372985
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/dboyer/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/36712/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 61)
+OBJS = $(FIL:.c=.o)
+# environment
+MANAGERPID = 92086
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/36712/vscode-ipc-9355abe4-0b93-4e78-8a3f-64d2e1a6b9f0.sock
+# environment
+VSCODE_CWD = /mnt/nfs/homes/dboyer
+# makefile (from 'Makefile', line 19)
+LIBRARY_HEADERS = ./libs/ft_list/includes/ft_list.h
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_36712_kw7OAm
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /mnt/nfs/homes/dboyer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mnt/nfs/homes/dboyer/goinfre/go/bin
+# environment
+GPG_AGENT_INFO = /run/user/36712/gnupg/S.gpg-agent:0:1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/e1r13p7.clusters.42paris.fr:@/tmp/.ICE-unix/92578,unix/e1r13p7.clusters.42paris.fr:/tmp/.ICE-unix/92578
+# environment
+XDG_RUNTIME_DIR = /run/user/36712
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 307680cf3d914517be0480fe0035bdb5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/dboyer
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/36712/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 100281
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /mnt/nfs/homes/dboyer/code/push_swap
+# makefile (from 'Makefile', line 63)
+FIL = $(addsuffix .c, $(addprefix srcs/, $(SRCS)))
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 92536
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /mnt/nfs/homes/dboyer
+# environment
+VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/dboyer/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
+# environment
+LOGNAME = dboyer
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 18)
+LIBRARY_INCLUDES = -I ./libs/ft_list/includes 
+# makefile (from 'Makefile', line 58)
+HEADERS = ./includes/push_swap.h ${LIBRARY_HEADERS}
+# environment
+ZSH = /mnt/nfs/homes/dboyer/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 29)
+SRCS = ft_new_stack ft_new_stack_with_args ft_stack_push ft_stack_pop ft_stack_swap ft_putchar ft_putstr ft_stack_rotate ft_stack_reverse_rotate ft_stack_push_to ft_stack_isempty ft_atoi ft_isspace ft_isdigit ft_isnumber ft_stack_clear ft_stack_show ft_putnbr ft_new_error ft_parse_args ft_error_show ft_strlen ft_sort_stack ft_is_sorted ft_less_than ft_greater_than
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 66)
+CC = gcc
+# environment
+IM_CONFIG_PHASE = 1
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = dboyer
+# makefile (from 'Makefile', line 60)
+OBJS_MAIN = $(MAIN:.c=.o)
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 17)
+LIBRARY_LINKS = -L ./libs/ft_list/ -lftlist	
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/nfs/homes/dboyer
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/36712/vscode-2fee8e48-1.66.2-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 27)
+MAIN = srcs/main.c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 25)
+NAME = push_swap
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+DOCKER_HOST = unix:///run/user/36712/docker.sock
+# environment
+VSCODE_PID = 100281
+# variable set hash-table stats:
+# Load=119/1024=12%, Rehash=0, Collisions=17/154=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 60, inode 268540068): 13 files, no impossibilities.
+# includes (device 60, inode 163157002): 3 files, no impossibilities so far.
+# libs/ft_list/includes (device 60, inode 163359814): 3 files, no impossibilities so far.
+# srcs (device 60, inode 163419191): 56 files, no impossibilities so far.
+
+# 75 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+%.o: %.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+srcs/ft_greater_than.o: srcs/ft_greater_than.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_greater_than'
+#  Last modified 2022-05-14 18:56:32.912345535
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_stack_push_to.o: srcs/ft_stack_push_to.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_push_to'
+ 
+#  Last modified 2022-05-14 18:56:32.364329569
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_stack_isempty.o: srcs/ft_stack_isempty.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_isempty'
+#  Last modified 2022-05-14 18:56:32.400330618
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_new_error.o: srcs/ft_new_error.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_new_error'
+#  Last modified 2022-05-14 18:56:32.668338426
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_stack_swap.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:41:56.958792522
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_stack_rotate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:41:56.914791243
+#  File has been updated.
+#  Successfully updated.
+
+all: push_swap
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_strlen.o: srcs/ft_strlen.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_strlen'
+#  Last modified 2022-05-14 18:56:32.776341573
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY: all clean fclean re bonus%
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+srcs/ft_isdigit.o: srcs/ft_isdigit.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_isdigit'
+#  Last modified 2022-05-14 18:56:32.496333415
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_isspace.o: srcs/ft_isspace.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_isspace'
+#  Last modified 2022-05-14 18:56:32.464332483
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+includes/push_swap.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:41:17.329640567
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_sort_stack.o: srcs/ft_sort_stack.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_sort_stack'
+#  Last modified 2022-05-14 18:56:32.816342738
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:56:29.284239838
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:31:17.876217784
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_atoi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:34.650188963
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_stack_clear.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:45:48.30554196
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_new_stack_with_args.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:50:15.98935801
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_putstr.o: srcs/ft_putstr.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_putstr'
+#  Last modified 2022-05-14 18:56:32.256326423
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_putnbr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:05.579089187
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_new_stack.o: srcs/ft_new_stack.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_new_stack'
+#  Last modified 2022-05-14 18:56:32.05232048
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_greater_than.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:47.094551172
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_error_show.o: srcs/ft_error_show.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_error_show'
+#  Last modified 2022-05-14 18:56:32.74434064
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_stack_push_to.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:22.023567822
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_isnumber.o: srcs/ft_isnumber.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_isnumber'
+#  Last modified 2022-05-14 18:56:32.528334348
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_stack_isempty.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:41:56.590781824
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_new_error.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:56.854835257
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_putchar.o: srcs/ft_putchar.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_putchar'
+#  Last modified 2022-05-14 18:56:32.220325374
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_strlen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:33.031888232
+#  File has been updated.
+#  Successfully updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 89):
+	$(RM) $(NAME)
+	$(MAKE) fclean -C ./libs/ft_list
+
+srcs/ft_stack_pop.o: srcs/ft_stack_pop.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_pop'
+#  Last modified 2022-05-14 18:56:32.15632351
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_isdigit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:50.202641637
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_isspace.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:53.646741881
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_less_than.o: srcs/ft_less_than.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_less_than'
+#  Last modified 2022-05-14 18:56:32.880344603
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_stack_push.o: srcs/ft_stack_push.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_push'
+#  Last modified 2022-05-14 18:56:32.116322344
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_parse_args.o: srcs/ft_parse_args.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_parse_args'
+#  Last modified 2022-05-14 18:56:32.704339474
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+libs/ft_list/includes/ft_list.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-14 18:44:13.198760863
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_stack_reverse_rotate.o: srcs/ft_stack_reverse_rotate.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_reverse_rotate'
+#  Last modified 2022-05-14 18:56:32.324328404
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_sort_stack.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:42:42.492116117
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+srcs/ft_stack_show.o: srcs/ft_stack_show.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_show'
+#  Last modified 2022-05-14 18:56:32.596336329
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 98):
+	./${NAME}
+
+# Not a target:
+srcs/ft_putstr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:09.167193623
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 84):
+	$(RM) $(OBJS)
+	$(RM) ${OBJS_MAIN}
+	$(MAKE) clean -C ./libs/ft_list
+
+# Not a target:
+srcs/ft_new_stack.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:00.618944815
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_error_show.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:23:46.519105534
+#  File has been updated.
+#  Successfully updated.
+
+push_swap: srcs/ft_new_stack.o srcs/ft_new_stack_with_args.o srcs/ft_stack_push.o srcs/ft_stack_pop.o srcs/ft_stack_swap.o srcs/ft_putchar.o srcs/ft_putstr.o srcs/ft_stack_rotate.o srcs/ft_stack_reverse_rotate.o srcs/ft_stack_push_to.o srcs/ft_stack_isempty.o srcs/ft_atoi.o srcs/ft_isspace.o srcs/ft_isdigit.o srcs/ft_isnumber.o srcs/ft_stack_clear.o srcs/ft_stack_show.o srcs/ft_putnbr.o srcs/ft_new_error.o srcs/ft_parse_args.o srcs/ft_error_show.o srcs/ft_strlen.o srcs/ft_sort_stack.o srcs/ft_is_sorted.o srcs/ft_less_than.o srcs/ft_greater_than.o srcs/main.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-14 18:56:33.496362548
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 80):
+	$(MAKE) -C ./libs/ft_list
+	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${OBJS_MAIN} ${LIBRARY_LINKS}
+
+srcs/ft_stack_swap.o: srcs/ft_stack_swap.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_swap'
+#  Last modified 2022-05-14 18:56:32.188324442
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_is_sorted.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:47:30.976541588
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_isnumber.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:51.76668716
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_stack_rotate.o: srcs/ft_stack_rotate.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_rotate'
+#  Last modified 2022-05-14 18:56:32.288327355
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_putchar.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:34:04.453058654
+#  File has been updated.
+#  Successfully updated.
+
+srcs/ft_is_sorted.o: srcs/ft_is_sorted.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_is_sorted'
+#  Last modified 2022-05-14 18:56:32.84834367
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_stack_pop.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:42:16.859371004
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_less_than.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:02:55.354791596
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_stack_push.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:42:17.811398678
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_parse_args.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:03:02.366995695
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_stack_reverse_rotate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:42:16.859371004
+#  File has been updated.
+#  Successfully updated.
+
+srcs/main.o: srcs/main.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/main'
+#  Last modified 2022-05-14 18:56:32.948346584
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+valgrind: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 101):
+	valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all ./${NAME}
+
+srcs/ft_atoi.o: srcs/ft_atoi.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_atoi'
+#  Last modified 2022-05-14 18:56:32.432331551
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_stack_clear.o: srcs/ft_stack_clear.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_stack_clear'
+#  Last modified 2022-05-14 18:56:32.56033528
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+srcs/ft_new_stack_with_args.o: srcs/ft_new_stack_with_args.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_new_stack_with_args'
+#  Last modified 2022-05-14 18:56:32.084321412
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+bonus%:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+srcs/ft_putnbr.o: srcs/ft_putnbr.c includes/push_swap.h libs/ft_list/includes/ft_list.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'srcs/ft_putnbr'
+#  Last modified 2022-05-14 18:56:32.62833726
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+srcs/ft_stack_show.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 18:42:16.883371702
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=68/1024=7%, Rehash=0, Collisions=5/307=2%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 167 / storage = 2771 B / avg = 16 B
+# current buf: size = 8162 B / used = 2771 B / count = 167 / avg = 16 B
+
+# strcache performance: lookups = 334 / hit rate = 50%
+# hash-table stats:
+# Load=167/8192=2%, Rehash=0, Collisions=6/334=2%
+# Finished Make data base on Sat May 14 18:56:40 2022
+
+ 
