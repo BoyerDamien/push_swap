@@ -23,5 +23,7 @@ t_stack	*ft_new_stack_with_args(char stack_name, int argc, char **argv)
 		}
 		new->push(new, ft_atoi(argv[argc]));
 	}
+	new->min_value = ft_stack_min(new);
+	new->max_value = ft_stack_max(new);
 	return (new);
 }

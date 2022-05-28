@@ -1,24 +1,25 @@
 #include "ft_list.h"
 #include "push_swap.h"
 
-long int	ft_stack_max(t_stack *stack)
+long int	ft_stack_min(t_stack *stack)
 {
-	long int	max;
+	long int	min;
 	int			i;
 	t_element	*element;
 
 	i = 0;
+	min = 0;
 	element = stack->list->first;
-	max = element->content;
+	min = element->content;
 	if (!stack->empty(stack))
 	{
 		while (i < stack->list->size)
 		{
-			if (element->content > max)
-				max = element->content;
+			if (element->content < min)
+				min = element->content;
 			element = element->next;
 			i++;
 		}
 	}
-	return (max);
+	return (min);
 }

@@ -30,15 +30,34 @@ static void	radix_sort(t_stack *a, t_stack *b)
 	}
 }
 
-static void	short_sort(t_stack *a)
+static void	sort(t_stack *a, t_stack *b)
 {
-	if (!ft_is_sorted(a))
+	// a->show(a);
+	// b->show(b);
+	if (b->is_mergeable(b, a))
 	{
-		if (a->list->first->next->content < a->list->first->content)
+		b->push_to(b, a);
+		sort(a, b);
+	}
+	else if (!ft_is_sorted(a))
+	{
+		if (a->is_swappable(a))
 			a->swap(a);
-		else
+		else if (a->list->first->content > a->list->first->next->content
+				&& a->list->first->content > a->list->first->next->next->content
+				&& a->list->first->content != a->max_value)
+			a->push_to(a, b);
+		else if (a->list->first->previous->content > a->list->first->content
+				&& a->list->first->previous->content != a->max_value)
 			a->reverse_rotate(a);
-		short_sort(a);
+		else
+			a->rotate(a);
+		sort(a, b);
+	}
+	else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
+	{
+		a->reverse_rotate(a);
+		sort(a, b);
 	}
 }
 
@@ -50,10 +69,10 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size > 5)
+	if (!a->is_sorted(a) && a->list->size && a->list->size <= 10)
+		sort(a, b);
+	else if (!a->is_sorted(a))
 		radix_sort(a, b);
-	else
-		short_sort(a);
 	a->clear(a);
 	b->clear(b);
 	free(a);
