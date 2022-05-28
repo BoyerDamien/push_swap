@@ -30,7 +30,7 @@ HEADERS = -I ./includes/
 
 CFLAGS  = -Werror -Wall -Wextra -O3 ${HEADERS} 
 
-CC              = clang
+CC              = gcc
 
 RM      =       rm -f
 

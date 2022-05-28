@@ -64,7 +64,7 @@ OBJS				= 	$(FIL:.c=.o)
 FIL = $(addsuffix .c, $(addprefix srcs/, $(SRCS)))
 
 CFLAGS  			= 	-Werror -Wall -Wextra -std=c99 -O3 -g ${INCLUDES}
-CC     				= 	clang
+CC     				= 	gcc
 RM      			= 	rm -f
 
 
