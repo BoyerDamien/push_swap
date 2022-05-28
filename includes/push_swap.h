@@ -31,6 +31,7 @@ typedef struct s_stack
     t_list *list;
     char stack_name;
     int min_value;
+    int max_value;
 
     void (*push)(struct s_stack*, long);
     t_element *(*pop)(struct s_stack*);
@@ -84,5 +85,6 @@ t_error *ft_sort_stack(t_stack *a, t_stack *b);
 t_bool ft_stack_is_swappable(t_stack *self);
 t_bool ft_stack_is_mergeable(t_stack *b, t_stack *a);
 long int ft_stack_min(t_stack *stack);
+long int ft_stack_max(t_stack *stack);
 
 #endif

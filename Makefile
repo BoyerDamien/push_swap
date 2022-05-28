@@ -54,7 +54,8 @@ SRCS    			= ft_new_stack\
 					  ft_greater_than\
 					  ft_stack_is_mergeable\
 					  ft_stack_is_swappable\
-					  ft_stack_min
+					  ft_stack_min\
+					  ft_stack_max
 
 INCLUDES			=	-I ./includes/ ${LIBRARY_INCLUDES}
 

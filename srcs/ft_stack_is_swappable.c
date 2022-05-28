@@ -3,7 +3,7 @@
 
 t_bool	ft_stack_is_swappable(t_stack *self)
 {
-	t_bool first_greater;
+	t_bool	first_greater;
 
 	if (self->list->size > 2)
 	{
