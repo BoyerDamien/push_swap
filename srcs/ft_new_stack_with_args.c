@@ -13,7 +13,7 @@ t_stack	*ft_new_stack_with_args(char stack_name, int argc, char **argv)
 	new = ft_new_stack(stack_name);
 	if (!new)
 		return (new);
-	while (--argc >= 1)
+	while (--argc)
 	{
 		if (new->list->search(new->list, ft_atoi(argv[argc]), is_equal) != NULL)
 		{

@@ -7,7 +7,9 @@ t_bool	ft_stack_is_mergeable(t_stack *b, t_stack *a)
 
 	if (!b->empty(b))
 	{
-		if (a->list->first->content != a->min_value)
+		if (b->list->first->content == a->max_value)
+			result = a->list->first->content == a->min_value;
+		else if (a->list->first->content != a->min_value)
 			result = b->list->first->content < a->list->first->content;
 		else
 			result = b->list->first->content > a->list->first->content &&

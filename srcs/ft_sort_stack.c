@@ -41,14 +41,18 @@ static void	sort(t_stack *a, t_stack *b)
 	}
 	else if (!ft_is_sorted(a))
 	{
-		if (a->is_swappable(a))
+		if (a->is_swappable(a) && a->list->size > 2)
 			a->swap(a);
 		else if (a->list->first->content > a->list->first->next->content
 				&& a->list->first->content > a->list->first->next->next->content
-				&& a->list->first->content != a->max_value)
+				&& a->list->size > 3
+				&& a->list->first->next->content != a->min_value)
 			a->push_to(a, b);
-		else if (a->list->first->previous->content > a->list->first->content
-				&& a->list->first->previous->content != a->max_value)
+		else if ((a->list->first->previous->content > a->list->first->content
+					&& a->list->first->previous->content != a->max_value
+					&& a->list->first->content != a->min_value)
+				|| (a->list->first->content == a->max_value
+					&& a->list->first->previous->content == a->min_value))
 			a->reverse_rotate(a);
 		else
 			a->rotate(a);
@@ -69,7 +73,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size && a->list->size <= 10)
+	if (!a->is_sorted(a) && a->list->size <= 50)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);

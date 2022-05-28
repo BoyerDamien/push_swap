@@ -8,7 +8,6 @@ long int	ft_stack_min(t_stack *stack)
 	t_element	*element;
 
 	i = 0;
-	min = 0;
 	element = stack->list->first;
 	min = element->content;
 	if (!stack->empty(stack))

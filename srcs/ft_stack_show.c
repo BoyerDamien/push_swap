@@ -3,7 +3,7 @@
 
 static void	print_one_element(t_element *element)
 {
-	if (element && element->content)
+	if (element)
 	{
 		ft_putnbr(element->content);
 		ft_putchar('\n');
