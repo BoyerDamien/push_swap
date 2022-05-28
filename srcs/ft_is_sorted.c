@@ -4,7 +4,7 @@
 
 static int	is_sorted(t_element *element)
 {
-	return (element->content > element->next->content);
+	return (element->content < element->next->content);
 }
 
 t_bool	ft_is_sorted(t_stack *self)
