@@ -7,16 +7,11 @@ t_bool	ft_stack_is_swappable(t_stack *self)
 
 	if (self->list->size > 2)
 	{
-		first_greater = ft_greater_than(self->list->first->content,
-										self->list->first->next->content) &&
-			ft_less_than(self->list->first->content,
-							self->list->first->next->next->content);
-		printf(
-			"Is swappable %d\n", first_greater);
+		first_greater = self->list->first->content > self->list->first->next->content
+			&& self->list->first->content < self->list->first->next->next->content;
 		return (first_greater);
 	}
 	if (self->list->size == 2)
-		return (ft_greater_than(self->list->first->content,
-								self->list->first->next->content));
+		return (self->list->first->content > self->list->first->next->content);
 	return (false);
 }

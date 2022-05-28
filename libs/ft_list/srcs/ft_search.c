@@ -6,18 +6,26 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/29 20:45:45 by dboyer            #+#    #+#             */
-/*   Updated: 2022/05/14 18:04:49 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/05/28 14:42:21 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-t_element	*ft_search(t_element *element, void *content,
-		int (*f)(t_element *element, void *content))
+t_element	*ft_search(t_list *self, long content, int (*f)(t_element *element,
+			long content))
 {
-	if (element && !f(element, content))
-		return (ft_search(element->next, content, f));
-	else if (!element)
-		return (NULL);
-	return (element);
+	t_element	*element;
+	int			i;
+
+	i = 0;
+	element = self->first;
+	while (element && i < self->size)
+	{
+		if (f(element, content))
+			return (element);
+		element = element->next;
+		i++;
+	}
+	return (NULL);
 }

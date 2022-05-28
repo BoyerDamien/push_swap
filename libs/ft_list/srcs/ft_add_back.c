@@ -6,13 +6,13 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:27:04 by dboyer            #+#    #+#             */
-/*   Updated: 2022/05/14 18:04:32 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/05/28 14:13:39 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-void	ft_add_back(t_list *list, void *content)
+void	ft_add_back(t_list *list, long content)
 {
 	t_element	*new_elem;
 

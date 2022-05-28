@@ -9,13 +9,13 @@ long int	ft_stack_min(t_stack *stack)
 
 	i = 0;
 	element = stack->list->first;
-	min = ft_atoi(element->content);
+	min = element->content;
 	if (!stack->empty(stack))
 	{
 		while (i < stack->list->size)
 		{
-			if (ft_atoi(element->content) < min)
-				min = ft_atoi(element->content);
+			if (element->content < min)
+				min = element->content;
 			element = element->next;
 			i++;
 		}
