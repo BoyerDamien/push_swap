@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2022/05/14 19:27:39 by dboyer           ###   ########.fr        #
+#    Updated: 2022/05/28 14:47:09 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ OBJS				= 	$(FIL:.c=.o)
 
 FIL = $(addsuffix .c, $(addprefix srcs/, $(SRCS)))
 
-CFLAGS  			= 	-Werror -Wall -Wextra -std=c99 -g3 ${INCLUDES}
+CFLAGS  			= 	-Werror -Wall -Wextra -std=c99 -O3 -g ${INCLUDES}
 CC     				= 	gcc
 RM      			= 	rm -f
 
