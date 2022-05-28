@@ -17,7 +17,7 @@ static void	radix_sort(t_stack *a, t_stack *b)
 		j = 0;
 		while (j < size)
 		{
-			num = ft_atoi(a->list->first->content) ^ INT_MIN;
+			num = a->list->first->content ^ INT_MIN;
 			if ((num >> i) & 1)
 				a->rotate(a);
 			else
@@ -34,8 +34,7 @@ static void	short_sort(t_stack *a)
 {
 	if (!ft_is_sorted(a))
 	{
-		if (ft_less_than(a->list->first->next->content,
-							a->list->first->content))
+		if (a->list->first->next->content < a->list->first->content)
 			a->swap(a);
 		else
 			a->reverse_rotate(a);
@@ -45,6 +44,12 @@ static void	short_sort(t_stack *a)
 
 t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 {
+	if (a == NULL)
+	{
+		b->clear(b);
+		free(b);
+		return (ft_new_error("duplicate number"));
+	}
 	if (!a->is_sorted(a) && a->list->size > 3)
 		radix_sort(a, b);
 	else

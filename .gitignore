@@ -10,3 +10,4 @@ push_swap
 # Cache
 .cache/
 *vgcore
+.vscode/

@@ -6,13 +6,13 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 12:29:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/05/14 19:01:32 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/05/28 14:13:39 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-void	ft_insert_before(t_list *list, t_element *element, void *content)
+void	ft_insert_before(t_list *list, t_element *element, long content)
 {
 	t_element	*new_elem;
 
