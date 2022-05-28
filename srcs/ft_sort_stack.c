@@ -50,7 +50,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size > 3)
+	if (!a->is_sorted(a) && a->list->size > 5)
 		radix_sort(a, b);
 	else
 		short_sort(a);
