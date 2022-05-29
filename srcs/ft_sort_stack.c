@@ -32,8 +32,8 @@ static void	radix_sort(t_stack *a, t_stack *b)
 
 static void	sort(t_stack *a, t_stack *b)
 {
-	// a->show(a);
-	// b->show(b);
+	a->show(a);
+	b->show(b);
 	if (b->is_mergeable(b, a))
 	{
 		b->push_to(b, a);
@@ -52,7 +52,8 @@ static void	sort(t_stack *a, t_stack *b)
 					&& a->list->first->previous->content != a->max_value
 					&& a->list->first->content != a->min_value)
 				|| (a->list->first->content == a->max_value
-					&& a->list->first->previous->content == a->min_value))
+					&& a->list->first->previous->content == a->min_value
+					&& a->list->size > 3))
 			a->reverse_rotate(a);
 		else
 			a->rotate(a);
