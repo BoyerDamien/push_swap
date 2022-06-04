@@ -6,9 +6,8 @@ t_bool	ft_is_pushable(t_stack *self)
 
 	result = false;
 
-	if (self->list->first->content == self->min_value)
-		result = false;
-	else if (self->list->first->content == self->max_value)
+	if (self->list->first->content == self->min_value
+		|| self->list->first->content == self->max_value)
 		result = false;
 	else
 		result = self->list->first->content > self->list->first->next->content

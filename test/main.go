@@ -49,22 +49,22 @@ func main() {
 	)
 	var (
 		evaluation = map[int][]Criterion{
-			// 3: {{NInstructions: 3, Point: 1}},
+			3: {{NInstructions: 3, Point: 1}},
 			5: {{NInstructions: 12, Point: 1}},
-			// 100: {
-			// 	{NInstructions: 700, Point: 5},
-			// 	{NInstructions: 900, Point: 4},
-			// 	{NInstructions: 1100, Point: 3},
-			// 	{NInstructions: 1300, Point: 2},
-			// 	{NInstructions: 1500, Point: 1},
-			// },
-			// 500: {
-			// 	{NInstructions: 5500, Point: 5},
-			// 	{NInstructions: 7000, Point: 4},
-			// 	{NInstructions: 8500, Point: 3},
-			// 	{NInstructions: 10000, Point: 2},
-			// 	{NInstructions: 11500, Point: 1},
-			// },
+			100: {
+				{NInstructions: 700, Point: 5},
+				{NInstructions: 900, Point: 4},
+				{NInstructions: 1100, Point: 3},
+				{NInstructions: 1300, Point: 2},
+				{NInstructions: 1500, Point: 1},
+			},
+			500: {
+				{NInstructions: 5500, Point: 5},
+				{NInstructions: 7000, Point: 4},
+				{NInstructions: 8500, Point: 3},
+				{NInstructions: 10000, Point: 2},
+				{NInstructions: 11500, Point: 1},
+			},
 		}
 	)
 

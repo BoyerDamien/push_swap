@@ -26,7 +26,6 @@ func (t *TestCase) RunWithTimeout(timeout time.Duration) ([]string, error) {
 		stdout = make(chan string)
 	)
 
-	fmt.Println(t.Args)
 	go func() {
 		stdout <- t.Run()
 	}()
