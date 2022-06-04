@@ -45,6 +45,7 @@ typedef struct s_stack
     t_bool(*is_sorted)(struct s_stack*);
     t_bool(*is_swappable)(struct s_stack *);
     t_bool (*is_mergeable)(struct s_stack *, struct s_stack *);
+    t_bool (*is_pushable)(struct s_stack*);
 } t_stack;
 
 
@@ -65,6 +66,7 @@ t_bool ft_stack_isempty(t_stack *self);
 t_bool ft_is_sorted(t_stack *self);
 t_bool	ft_stack_is_swappable(t_stack *self);
 t_bool	ft_stack_is_mergeable(t_stack *b, t_stack *a);
+t_bool	ft_is_pushable(t_stack *self);
 long ft_stack_min(t_stack *self);
 long ft_stack_max(t_stack *self);
 

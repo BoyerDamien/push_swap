@@ -25,6 +25,8 @@ func (t *TestCase) RunWithTimeout(timeout time.Duration) ([]string, error) {
 	var (
 		stdout = make(chan string)
 	)
+
+	fmt.Println(t.Args)
 	go func() {
 		stdout <- t.Run()
 	}()
@@ -32,7 +34,8 @@ func (t *TestCase) RunWithTimeout(timeout time.Duration) ([]string, error) {
 	case <-time.After(timeout):
 		return []string{}, fmt.Errorf("timeout")
 	case result := <-stdout:
-		return strings.Split(result, "\n"), nil
+		r := strings.Split(strings.Trim(result, " "), "\n")
+		return r[0 : len(r)-1], nil
 	}
 }
 
