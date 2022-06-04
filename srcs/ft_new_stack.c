@@ -22,5 +22,6 @@ t_stack	*ft_new_stack(char stack_name)
 	new->swap = ft_stack_swap;
 	new->is_swappable = ft_stack_is_swappable;
 	new->is_mergeable = ft_stack_is_mergeable;
+	new->is_pushable = ft_is_pushable;
 	return (new);
 }

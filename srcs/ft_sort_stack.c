@@ -1,3 +1,4 @@
+#include "ft_list.h"
 #include "push_swap.h"
 #include <limits.h>
 #include <stdio.h>
@@ -43,16 +44,18 @@ static void	sort(t_stack *a, t_stack *b)
 	{
 		if (a->is_swappable(a) && a->list->size > 2)
 			a->swap(a);
-		else if (a->list->first->content > a->list->first->next->content
-				&& a->list->first->content > a->list->first->next->next->content
-				&& a->list->size > 3
-				&& a->list->first->next->content != a->min_value)
+		else if (a->is_pushable(a))
 			a->push_to(a, b);
 		else if ((a->list->first->previous->content > a->list->first->content
 					&& a->list->first->previous->content != a->max_value
 					&& a->list->first->content != a->min_value)
 				|| (a->list->first->content == a->max_value
-					&& a->list->first->previous->content == a->min_value))
+					&& a->list->first->previous->content == a->min_value
+					&& a->list->size > 3)
+				|| (a->list->first->content == a->min_value
+					&& a->list->first->previous->content != a->max_value)
+				|| (b->list->size > 0
+					&& b->list->first->content < a->list->first->content))
 			a->reverse_rotate(a);
 		else
 			a->rotate(a);
@@ -60,7 +63,10 @@ static void	sort(t_stack *a, t_stack *b)
 	}
 	else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
 	{
-		a->reverse_rotate(a);
+		if (b->list->first->content > a->list->first->content)
+			a->rotate(a);
+		else
+			a->reverse_rotate(a);
 		sort(a, b);
 	}
 }
@@ -73,7 +79,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size <= 50)
+	if (!a->is_sorted(a) && a->list->size <= 30)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
