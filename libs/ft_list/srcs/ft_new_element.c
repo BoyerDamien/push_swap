@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:17:22 by dboyer            #+#    #+#             */
-/*   Updated: 2022/05/28 14:13:39 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/06 14:47:48 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ t_element	*ft_new_element(long content)
 {
 	t_element	*new;
 
-	if (!(new = (t_element *)malloc(sizeof(t_element))))
+	new = (t_element *)malloc(sizeof(t_element));
+	if (!new)
 		return (NULL);
 	new->content = content;
 	new->previous = NULL;
