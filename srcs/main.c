@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/06 10:23:51 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/06 12:23:22 by dboyer           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include <limits.h>
 #include <stdlib.h>
@@ -31,8 +43,8 @@ int	main(int argc, char **argv)
 		ft_check_error(ft_check_args(argc, argv));
 		ft_check_error(ft_check_max_min_int(argc, argv));
 		ft_check_error(ft_sort_stack(
-			ft_new_stack_with_args('a', argc, argv),
-			ft_new_stack('b')));
+				ft_new_stack_with_args('a', argc, argv),
+				ft_new_stack('b')));
 	}
 	return (0);
 }
