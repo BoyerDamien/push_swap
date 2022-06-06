@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_stack.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/06 10:32:16 by dboyer           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_list.h"
 #include "push_swap.h"
 #include <limits.h>
@@ -33,8 +45,6 @@ static void	radix_sort(t_stack *a, t_stack *b)
 
 static void	sort(t_stack *a, t_stack *b)
 {
-	// a->show(a);
-	// b->show(b);
 	if (b->is_mergeable(b, a))
 	{
 		b->push_to(b, a);
