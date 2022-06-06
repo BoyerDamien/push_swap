@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:23 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 12:41:06 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/06 15:08:15 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ t_bool	ft_stack_is_mergeable(t_stack *b, t_stack *a)
 	int		a_first;
 
 	result = false;
-	b_first = b->list->first->content;
-	a_previous = a->list->first->previous->content;
-	a_first = a->list->first->content;
 	if (!b->empty(b))
 	{
+		a_previous = a->list->first->previous->content;
+		a_first = a->list->first->content;
+		b_first = b->list->first->content;
 		if (a_first == a->max_value)
 			result = b_first > a_previous;
 		else if (a_first == a->min_value)
