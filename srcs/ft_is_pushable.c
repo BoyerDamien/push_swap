@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:22:48 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:25:36 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/06 12:39:55 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,18 @@
 
 t_bool	ft_is_pushable(t_stack *self)
 {
-	t_bool result;
+	t_bool	result;
+	int		first;
+	int		next;
+	int		next_next;
 
 	result = false;
-	if (self->list->first->content == self->min_value
-		|| self->list->first->content == self->max_value)
+	first = self->list->first->content;
+	next = self->list->first->next->content;
+	next_next = self->list->first->next->next->content;
+	if (first == self->min_value || first == self->max_value)
 		result = false;
 	else
-		result = self->list->first->content > self->list->first->next->content
-			&& self->list->first->content > self->list->first->next->next->content
-			&& self->list->size > 3;
+		result = (first > next && first > next_next && self->list->size > 3);
 	return (result);
 }

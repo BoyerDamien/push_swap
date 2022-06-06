@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:13 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:25:59 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/06 12:24:24 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_putchar(char c)
 {
-	int ret __attribute__((unused));
+	int ret	__attribute__((unused));
+
 	ret = write(1, &c, 1);
 }
