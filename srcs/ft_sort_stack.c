@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:32:16 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/06 10:51:19 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,22 @@ static void	radix_sort(t_stack *a, t_stack *b)
 	}
 }
 
+static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
+{
+	t_element	*first;
+	t_element	*previous;
+
+	first = a->list->first;
+	previous = first->previous;
+	return ((previous->content > first->content
+			&& previous->content != a->max_value
+			&& first->content != a->min_value)
+		|| (first->content == a->max_value && previous->content == a->min_value
+			&& a->list->size > 3) || (first->content == a->min_value
+			&& previous->content != a->max_value) || (b->list->size > 0
+			&& b->list->first->content < first->content));
+}
+
 static void	sort(t_stack *a, t_stack *b)
 {
 	if (b->is_mergeable(b, a))
@@ -56,16 +72,7 @@ static void	sort(t_stack *a, t_stack *b)
 			a->swap(a);
 		else if (a->is_pushable(a))
 			a->push_to(a, b);
-		else if ((a->list->first->previous->content > a->list->first->content
-					&& a->list->first->previous->content != a->max_value
-					&& a->list->first->content != a->min_value)
-				|| (a->list->first->content == a->max_value
-					&& a->list->first->previous->content == a->min_value
-					&& a->list->size > 3)
-				|| (a->list->first->content == a->min_value
-					&& a->list->first->previous->content != a->max_value)
-				|| (b->list->size > 0
-					&& b->list->first->content < a->list->first->content))
+		else if (can_reverse_rotate(a, b))
 			a->reverse_rotate(a);
 		else
 			a->rotate(a);
