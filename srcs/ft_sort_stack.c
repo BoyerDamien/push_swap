@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 14:02:03 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 15:45:56 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,11 +51,11 @@ static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
 	first = a->list->first;
 	previous = first->previous;
 	return ((previous->content > first->content
-			&& previous->content != a->max_value
-			&& first->content != a->min_value)
-		|| (first->content == a->max_value && previous->content == a->min_value
-			&& a->list->size > 3) || (first->content == a->min_value
-			&& previous->content != a->max_value) || (b->list->size > 0
+			&& previous->content != a->list->max
+			&& first->content != a->list->min)
+		|| (first->content == a->list->max && previous->content == a->list->min
+			&& a->list->size > 3) || (first->content == a->list->min
+			&& previous->content != a->list->max) || (b->list->size > 0
 			&& b->list->first->content < first->content));
 }
 
@@ -68,7 +68,7 @@ static void	sort(t_stack *a, t_stack *b)
 	}
 	else if (!ft_is_sorted(a))
 	{
-		if (a->is_swappable(a) && a->list->size > 2)
+		if (a->is_swappable(a))
 			a->swap(a);
 		else if (a->is_pushable(a))
 			a->push_to(a, b);
@@ -96,7 +96,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size <= 30)
+	if (!a->is_sorted(a) && a->list->size <= 10)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
