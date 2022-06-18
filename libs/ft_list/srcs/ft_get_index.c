@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stack_min.c                                     :+:      :+:    :+:   */
+/*   ft_get_index.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 10:23:33 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:26:09 by dboyer           ###   ########.fr       */
+/*   Created: 2022/06/18 14:08:41 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/18 14:10:52 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
-#include "push_swap.h"
 
-long int	ft_stack_min(t_stack *stack)
+int	ft_get_index(t_list *self, long int value)
 {
-	long int	min;
-	int			i;
-	t_element	*element;
+	t_element *element;
+	int i;
 
 	i = 0;
-	element = stack->list->first;
-	min = element->content;
-	if (!stack->empty(stack))
+	element = self->first;
+	while (element && element->next != self->first && element->content != value)
 	{
-		while (i < stack->list->size)
-		{
-			if (element->content < min)
-				min = element->content;
-			element = element->next;
-			i++;
-		}
+		element = element->next;
+		i++;
 	}
-	return (min);
+	return (1);
 }

@@ -6,10 +6,11 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:04 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:25:53 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 13:46:28 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_list.h"
 #include "push_swap.h"
 #include <stdio.h>
 
@@ -35,7 +36,7 @@ t_stack	*ft_new_stack_with_args(char stack_name, int argc, char **argv)
 		}
 		new->push(new, ft_atoi(argv[argc]));
 	}
-	new->min_value = ft_stack_min(new);
-	new->max_value = ft_stack_max(new);
+	new->list->min = ft_list_min(new->list);
+	new->list->max = ft_list_max(new->list);
 	return (new);
 }

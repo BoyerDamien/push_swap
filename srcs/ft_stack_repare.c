@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_iter_ret.c                                 :+:      :+:    :+:   */
+/*   ft_stack_repare.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 14:46:54 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 13:54:33 by dboyer           ###   ########.fr       */
+/*   Created: 2022/06/18 13:59:31 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/18 14:18:11 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "push_swap.h"
 
-int	ft_list_iter_ret(t_list *self, int (*f)(t_list *self, t_element *element))
+void	ft_stack_repare(t_stack *self)
 {
-	t_element	*element;
+	int min_index;
 
-	element = self->first;
-	while (element && element->next != self->first)
+	min_index = self->list->index_of(self->list, self->min_value);
+	while (self->list->first->content != self->list->min)
 	{
-		if (f(self, element) < 1)
-			return (0);
-		element = element->next;
+		if (min_index > self->list->size / 2)
+			self->rotate(self);
+		else
+			self->reverse_rotate(self);
 	}
-	return (1);
 }

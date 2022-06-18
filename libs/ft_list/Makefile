@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2022/05/14 18:56:13 by dboyer           ###   ########.fr        #
+#    Updated: 2022/06/18 14:12:57 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,10 @@ SRCS 	=	srcs/ft_add_back.c\
 		srcs/ft_search.c\
 		srcs/ft_insert_before.c\
 		srcs/ft_list_iter_ret.c\
-		srcs/ft_list_get_last.c
+		srcs/ft_list_get_last.c\
+		srcs/ft_list_min.c\
+		srcs/ft_list_max.c\
+		srcs/ft_get_index.c
 
 OBJS    =       $(SRCS:.c=.o)
 HEADERS = -I ./includes/

@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:51:19 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 14:02:03 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
+	ft_stack_repare(a);
 	a->clear(a);
 	b->clear(b);
 	free(a);
