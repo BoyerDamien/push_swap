@@ -64,9 +64,6 @@ t_bool			ft_is_sorted(t_stack *self);
 t_bool			ft_stack_is_swappable(t_stack *self);
 t_bool			ft_stack_is_mergeable(t_stack *b, t_stack *a);
 t_bool			ft_is_pushable(t_stack *self);
-long			ft_stack_min(t_stack *self);
-long			ft_stack_max(t_stack *self);
-
 // Utils
 void			ft_putchar(char c);
 void			ft_putstr(char *str);
@@ -83,5 +80,7 @@ size_t			ft_strlen(char *str);
 
 t_error			*ft_check_args(int argc, char **argv);
 t_error			*ft_sort_stack(t_stack *a, t_stack *b);
+
+void ft_stack_repare(t_stack *self);
 
 #endif

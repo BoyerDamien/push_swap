@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 12:30:29 by dboyer            #+#    #+#             */
-/*   Updated: 2022/05/14 18:40:32 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 14:12:02 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ t_list	*ft_list(void)
 	new = (t_list *)malloc(sizeof(t_list));
 	if (!new)
 		return (NULL);
+	new->min = 0;
+	new->max = 0;
 	new->size = 0;
 	new->append = ft_add_back;
 	new->clear = ft_clear;
@@ -31,5 +33,6 @@ t_list	*ft_list(void)
 	new->insert_before = ft_insert_before;
 	new->iter_with_ret = ft_list_iter_ret;
 	new->last = ft_list_get_last;
+	new->index_of = ft_get_index;
 	return (new);
 }

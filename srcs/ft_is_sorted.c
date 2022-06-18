@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:22:52 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:25:41 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 13:52:32 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
 #include "push_swap.h"
 #include <stdio.h>
 
-static int	is_sorted(t_element *element)
+static int	is_sorted(t_list *self, t_element *element)
 {
-	return (element->content < element->next->content);
+	t_bool	is_end;
+
+	is_end = element->content == self->max
+		&& element->next->content == self->min;
+	return ((element->content < element->next->content) || is_end);
 }
 
 t_bool	ft_is_sorted(t_stack *self)

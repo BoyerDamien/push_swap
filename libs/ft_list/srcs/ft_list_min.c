@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_iter_ret.c                                 :+:      :+:    :+:   */
+/*   ft_stack_min.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/06 14:46:54 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 13:54:33 by dboyer           ###   ########.fr       */
+/*   Created: 2022/06/06 10:23:33 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/18 13:39:07 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-int	ft_list_iter_ret(t_list *self, int (*f)(t_list *self, t_element *element))
+long int	ft_list_min(t_list *self)
 {
+	long int	min;
+	int			i;
 	t_element	*element;
 
+	i = 0;
 	element = self->first;
-	while (element && element->next != self->first)
+	min = element->content;
+	if (self->size > 0)
 	{
-		if (f(self, element) < 1)
-			return (0);
-		element = element->next;
+		while (i < self->size)
+		{
+			if (element->content < min)
+				min = element->content;
+			element = element->next;
+			i++;
+		}
 	}
-	return (1);
+	return (min);
 }
