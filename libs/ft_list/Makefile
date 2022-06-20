@@ -6,7 +6,7 @@
 #    By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/13 18:42:28 by dboyer            #+#    #+#              #
-#    Updated: 2022/06/18 14:12:57 by dboyer           ###   ########.fr        #
+#    Updated: 2022/06/18 20:22:41 by dboyer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,8 @@ SRCS 	=	srcs/ft_add_back.c\
 		srcs/ft_list_get_last.c\
 		srcs/ft_list_min.c\
 		srcs/ft_list_max.c\
-		srcs/ft_get_index.c
+		srcs/ft_get_index.c\
+		srcs/ft_get_index_reverse.c
 
 OBJS    =       $(SRCS:.c=.o)
 HEADERS = -I ./includes/

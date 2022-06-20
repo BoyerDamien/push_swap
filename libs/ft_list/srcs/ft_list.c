@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 12:30:29 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 14:12:02 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 20:22:27 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ t_list	*ft_list(void)
 	new->iter_with_ret = ft_list_iter_ret;
 	new->last = ft_list_get_last;
 	new->index_of = ft_get_index;
+	new->index_of_reverse = ft_get_index_reverse;
 	return (new);
 }

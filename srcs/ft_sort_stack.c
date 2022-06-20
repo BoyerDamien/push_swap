@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 15:45:56 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 21:07:07 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
 
 static void	sort(t_stack *a, t_stack *b)
 {
+	// a->show(a);
+	// b->show(b);
 	if (b->is_mergeable(b, a))
 	{
 		b->push_to(b, a);

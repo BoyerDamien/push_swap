@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_index.c                                     :+:      :+:    :+:   */
+/*   ft_get_index_reverse.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/18 14:08:41 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 19:47:27 by dboyer           ###   ########.fr       */
+/*   Created: 2022/06/18 20:20:05 by dboyer            #+#    #+#             */
+/*   Updated: 2022/06/18 20:21:22 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-int	ft_get_index(t_list *self, long int value)
+int	ft_get_index_reverse(t_list *self, long int value)
 {
 	t_element *element;
 	int i;
@@ -23,7 +23,7 @@ int	ft_get_index(t_list *self, long int value)
 	{
 		if (element->content == value)
 			return (i);
-		element = element->next;
+		element = element->previous;
 		i++;
 	}
 	return (i);
