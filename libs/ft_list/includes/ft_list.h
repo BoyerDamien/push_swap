@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:32:33 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 14:15:28 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/06/18 20:22:17 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ typedef struct s_list
 	void				(*iter)(struct s_list *, void (*f)(t_element*));
 	int					(*iter_with_ret)(struct s_list*, int (*f)(struct s_list *, t_element*));
 	int					(*index_of)(struct s_list*, long int);
+	int					(*index_of_reverse)(struct s_list*, long int);
 
 	void				(*insert_before)(struct s_list*, t_element*, long);
 	struct	s_list		*(*concat)(struct s_list*, struct s_list*);
@@ -69,5 +70,6 @@ t_list					*ft_list_copy(t_list *list);
 long int				ft_list_max(t_list *self);
 long int				ft_list_min(t_list *self);
 int 					ft_get_index(t_list *self, long int index);
+int 					ft_get_index_reverse(t_list *self, long int index);
 
 #	endif

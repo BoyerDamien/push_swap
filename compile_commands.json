@@ -888,5 +888,23 @@
     "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
     "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_max.c",
     "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_max.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_get_index.o",
+      "srcs/ft_get_index.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.o"
   }
 ]

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math/rand"
 	"sort"
 	"test-push-swap/testcase"
@@ -41,11 +42,11 @@ func Evaluate(response []string, criterion []Criterion) int {
 	return 0
 }
 
-func main() {
+func RunOneTest() {
 	const (
-		timeout = time.Second * 12
+		timeout = time.Second * 5
 		cmd     = "../push_swap"
-		min     = 0
+		min     = -50
 	)
 	var (
 		evaluation = map[int][]Criterion{
@@ -74,11 +75,19 @@ func main() {
 		result, err := testCase.RunWithTimeout(timeout)
 		evaluation := Evaluate(result, value)
 		if err != nil {
-			panic(err)
+			log.Fatalln(err)
 		}
-		fmt.Printf("Result = %d -- N = %d -- Point = %d\n", len(result), key, evaluation)
+		log.Printf("Result = %d -- N = %d -- Point = %d\n", len(result), key, evaluation)
 		if evaluation == 0 {
-			fmt.Println(testCase)
+			log.Fatalln(testCase)
 		}
+	}
+}
+
+func main() {
+	const nTest = 1000
+
+	for i := 0; i < nTest; i++ {
+		RunOneTest()
 	}
 }
