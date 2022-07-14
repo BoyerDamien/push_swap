@@ -31,6 +31,7 @@ func (t *TestCase) RunWithTimeout(timeout time.Duration) ([]string, error) {
 	}()
 	select {
 	case <-time.After(timeout):
+		fmt.Println(t.Args)
 		return []string{}, fmt.Errorf("timeout")
 	case result := <-stdout:
 		r := strings.Split(strings.Trim(result, " "), "\n")

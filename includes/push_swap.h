@@ -28,8 +28,6 @@ typedef struct s_stack
 {
 	t_list		*list;
 	char		stack_name;
-	long		min_value;
-	long		max_value;
 
 	void		(*push)(struct s_stack*, long);
 	t_element	*(*pop)(struct s_stack*);
@@ -80,6 +78,8 @@ size_t			ft_strlen(char *str);
 
 t_error			*ft_check_args(int argc, char **argv);
 t_error			*ft_sort_stack(t_stack *a, t_stack *b);
+
+t_bool	ft_is_swappable(t_list *list, t_element *element);
 
 void ft_stack_repare(t_stack *self);
 

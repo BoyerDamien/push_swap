@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 21:07:07 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/07/14 19:46:09 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,35 @@ static void	radix_sort(t_stack *a, t_stack *b)
 	}
 }
 
+// static int	is_sorted(t_list *self, t_element *element)
+// {
+// 	return !ft_is_swappable(self, element)
+// }
+
+// t_bool	ft_is_broken(t_stack *self)
+// {
+// 	if (self->list->size >= 2)
+// 		return (self->list->iter_with_ret(self->list, is_sorted));
+// 	return (true);
+// }
+
+// // TODO: find better way to choose between rotate and reverse_rotate
+// static t_bool	can_reverse_rotate(t_stack *self)
+// {
+// 	int		index;
+// 	int		rev_index;
+// 	long	found;
+
+// 	index = self->list->index_of(self->list, found);
+// 	rev_index = self->list->index_of_reverse(self->list, found);
+// 	while (self->list->first->content != found)
+// 	{
+// 		if (index <= rev_index)
+// 			self->rotate(self);
+// 		else
+// 			self->reverse_rotate(self);
+// 	}
+// }
 static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
 {
 	t_element	*first;
@@ -82,10 +111,14 @@ static void	sort(t_stack *a, t_stack *b)
 	}
 	else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
 	{
-		if (b->list->first->content > a->list->first->content)
+		if (b->list->first->content > a->list->first->content
+			&& a->list->first->content != a->list->min)
 			a->rotate(a);
-		else
+		else if (b->list->first->content < a->list->first->content
+				&& a->list->first->content != a->list->max)
 			a->reverse_rotate(a);
+		else
+			a->rotate(a);
 		sort(a, b);
 	}
 }
