@@ -40,7 +40,7 @@ typedef struct s_stack
 	t_bool		(*empty)(struct s_stack*);
 	t_bool		(*is_sorted)(struct s_stack*);
 	t_bool		(*is_swappable)(struct s_stack *);
-	t_bool		(*is_mergeable)(struct s_stack *, struct s_stack *);
+	t_bool		(*is_mergeable)(struct s_stack *, const struct s_stack *);
 	t_bool		(*is_pushable)(struct s_stack*);
 }	t_stack;
 
@@ -60,7 +60,7 @@ void			ft_stack_clear(t_stack *self);
 t_bool			ft_stack_isempty(t_stack *self);
 t_bool			ft_is_sorted(t_stack *self);
 t_bool			ft_stack_is_swappable(t_stack *self);
-t_bool			ft_stack_is_mergeable(t_stack *b, t_stack *a);
+t_bool			ft_stack_is_mergeable(t_stack *b, const t_stack *a);
 t_bool			ft_is_pushable(t_stack *self);
 // Utils
 void			ft_putchar(char c);
