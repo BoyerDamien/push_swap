@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/07/17 14:25:07 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/06 15:35:58 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,35 +43,6 @@ static void	radix_sort(t_stack *a, t_stack *b)
 	}
 }
 
-// static int	is_sorted(t_list *self, t_element *element)
-// {
-// 	return !ft_is_swappable(self, element)
-// }
-
-// t_bool	ft_is_broken(t_stack *self)
-// {
-// 	if (self->list->size >= 2)
-// 		return (self->list->iter_with_ret(self->list, is_sorted));
-// 	return (true);
-// }
-
-// // TODO: find better way to choose between rotate and reverse_rotate
-// static t_bool	can_reverse_rotate(t_stack *self)
-// {
-// 	int		index;
-// 	int		rev_index;
-// 	long	found;
-
-// 	index = self->list->index_of(self->list, found);
-// 	rev_index = self->list->index_of_reverse(self->list, found);
-// 	while (self->list->first->content != found)
-// 	{
-// 		if (index <= rev_index)
-// 			self->rotate(self);
-// 		else
-// 			self->reverse_rotate(self);
-// 	}
-// }
 static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
 {
 	t_element	*first;
@@ -131,7 +102,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size <= 10)
+	if (!a->is_sorted(a) && a->list->size <= 1000)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
