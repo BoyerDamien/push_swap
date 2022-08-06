@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:08 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 10:25:54 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/07/17 12:43:44 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,18 @@ t_stack	*ft_new_stack(char stack_name)
 		return (NULL);
 	new->stack_name = stack_name;
 	new->list = ft_list();
-	new->pop = ft_stack_pop;
-	new->push = ft_stack_push;
-	new->push_to = ft_stack_push_to;
-	new->empty = ft_stack_isempty;
-	new->reverse_rotate = ft_stack_reverse_rotate;
-	new->rotate = ft_stack_rotate;
-	new->clear = ft_stack_clear;
-	new->show = ft_stack_show;
-	new->is_sorted = ft_is_sorted;
-	new->swap = ft_stack_swap;
-	new->is_swappable = ft_stack_is_swappable;
-	new->is_mergeable = ft_stack_is_mergeable;
-	new->is_pushable = ft_is_pushable;
+	new->pop = &ft_stack_pop;
+	new->push = &ft_stack_push;
+	new->push_to = &ft_stack_push_to;
+	new->empty = &ft_stack_isempty;
+	new->reverse_rotate = &ft_stack_reverse_rotate;
+	new->rotate = &ft_stack_rotate;
+	new->clear = &ft_stack_clear;
+	new->show = &ft_stack_show;
+	new->is_sorted = &ft_is_sorted;
+	new->swap = &ft_stack_swap;
+	new->is_swappable = &ft_stack_is_swappable;
+	new->is_mergeable = &ft_stack_is_mergeable;
+	new->is_pushable = &ft_is_pushable;
 	return (new);
 }
