@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:22:52 by dboyer            #+#    #+#             */
-/*   Updated: 2022/07/14 18:06:44 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/15 14:26:44 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ static int	is_sorted(t_list *self, t_element *element)
 {
 	t_bool	is_end;
 
-	is_end = element->content == self->max
-		&& element->next->content == self->min;
+	is_end = (element->content == self->max && \
+			element->next->content == self->min);
 	return ((element->content < element->next->content) || is_end);
 }
 

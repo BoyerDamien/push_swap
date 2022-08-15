@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 14:08:41 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 19:47:27 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/15 14:40:05 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_get_index(t_list *self, long int value)
 {
-	t_element *element;
-	int i;
+	t_element	*element;
+	int			i;
 
 	i = 0;
 	element = self->first;

@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:08 by dboyer            #+#    #+#             */
-/*   Updated: 2022/08/06 14:25:26 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/15 15:07:12 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ t_stack	*ft_new_stack(char stack_name)
 	new->is_sorted = &ft_is_sorted;
 	new->swap = &ft_stack_swap;
 	new->is_swappable = &ft_stack_is_swappable;
-	new->is_mergeable = &ft_stack_is_mergeable;
 	new->is_pushable = &ft_is_pushable;
 	return (new);
 }
