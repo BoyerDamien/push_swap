@@ -17,13 +17,10 @@ typedef struct s_error
 	void	(*show)();
 }	t_error;
 
-// Error constructor
 t_error			*ft_new_error(char *message);
 
-// Error methods
 void			ft_error_show(t_error *error);
 
-// Stack object
 typedef struct s_stack
 {
 	t_list		*list;
@@ -40,15 +37,13 @@ typedef struct s_stack
 	t_bool		(*empty)(struct s_stack*);
 	t_bool		(*is_sorted)(struct s_stack*);
 	t_bool		(*is_swappable)(struct s_stack *);
-	t_bool		(*is_mergeable)(struct s_stack *, const struct s_stack *);
+	t_bool		(*is_mergeable)(struct s_stack *s1, const struct s_stack* s2);
 	t_bool		(*is_pushable)(struct s_stack*);
 }	t_stack;
 
-// Stack constructors
 t_stack			*ft_new_stack(char stack_name);
 t_stack			*ft_new_stack_with_args(char stack_name, int argc, char **argv);
 
-// Stack method
 t_element		*ft_stack_pop(t_stack *self);
 void			ft_stack_push(t_stack *self, long element);
 void			ft_stack_swap(t_stack *self);
@@ -62,7 +57,7 @@ t_bool			ft_is_sorted(t_stack *self);
 t_bool			ft_stack_is_swappable(t_stack *self);
 t_bool			ft_stack_is_mergeable(t_stack *b, const t_stack *a);
 t_bool			ft_is_pushable(t_stack *self);
-// Utils
+
 void			ft_putchar(char c);
 void			ft_putstr(char *str);
 t_bool			ft_less_than(char *n1, char *n2);
