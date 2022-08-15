@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/08/06 15:35:58 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/15 15:08:38 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,21 @@ static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
 			&& b->list->first->content < first->content));
 }
 
+static void	merge_b_stack(t_stack *a, t_stack *b)
+{
+	if (b->list->first->content > a->list->first->content && \
+		a->list->first->content != a->list->min)
+		a->rotate(a);
+	else if (b->list->first->content < a->list->first->content && \
+					a->list->first->content != a->list->max)
+		a->reverse_rotate(a);
+	else
+		a->rotate(a);
+}
+
 static void	sort(t_stack *a, t_stack *b)
 {
-	// a->show(a);
-	// b->show(b);
-	if (b->is_mergeable(b, a))
+	if (ft_stack_is_mergeable(b, a))
 	{
 		b->push_to(b, a);
 		sort(a, b);
@@ -80,16 +90,9 @@ static void	sort(t_stack *a, t_stack *b)
 			a->rotate(a);
 		sort(a, b);
 	}
-	else if (ft_is_sorted(a) && !b->is_mergeable(b, a) && !b->empty(b))
+	else if (ft_is_sorted(a) && !ft_stack_is_mergeable(b, a) && !b->empty(b))
 	{
-		if (b->list->first->content > a->list->first->content
-			&& a->list->first->content != a->list->min)
-			a->rotate(a);
-		else if (b->list->first->content < a->list->first->content
-				&& a->list->first->content != a->list->max)
-			a->reverse_rotate(a);
-		else
-			a->rotate(a);
+		merge_b_stack(a, b);
 		sort(a, b);
 	}
 }
@@ -102,7 +105,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		free(b);
 		return (ft_new_error("duplicate number"));
 	}
-	if (!a->is_sorted(a) && a->list->size <= 1000)
+	if (!a->is_sorted(a) && a->list->size <= 10)
 		sort(a, b);
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);

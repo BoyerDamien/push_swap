@@ -14,8 +14,8 @@
 
 void	ft_stack_repare(t_stack *self)
 {
-	int index;
-	int rev_index;
+	int	index;
+	int	rev_index;
 
 	index = self->list->index_of(self->list, self->list->min);
 	rev_index = self->list->index_of_reverse(self->list, self->list->min);

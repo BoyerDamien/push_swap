@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/18 20:20:05 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 20:21:22 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/08/15 14:39:57 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_get_index_reverse(t_list *self, long int value)
 {
-	t_element *element;
-	int i;
+	t_element	*element;
+	int			i;
 
 	i = 0;
 	element = self->first;

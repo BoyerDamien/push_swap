@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/15 12:55:03 by dboyer            #+#    #+#             */
+/*   Updated: 2022/08/15 15:08:38 by dboyer           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
@@ -15,7 +27,7 @@ typedef struct s_error
 {
 	char	*message;
 	void	(*show)();
-}	t_error;
+}			t_error;
 
 // Error constructor
 t_error			*ft_new_error(char *message);
@@ -24,25 +36,24 @@ t_error			*ft_new_error(char *message);
 void			ft_error_show(t_error *error);
 
 // Stack object
-typedef struct s_stack
+typedef struct s_st
 {
 	t_list		*list;
 	char		stack_name;
 
-	void		(*push)(struct s_stack*, long);
-	t_element	*(*pop)(struct s_stack*);
-	void		(*swap)(struct s_stack*);
-	void		(*rotate)(struct s_stack*);
-	void		(*reverse_rotate)(struct s_stack*);
-	void		(*push_to)(struct s_stack*, struct s_stack*);
-	void		(*clear)(struct s_stack*);
-	void		(*show)(struct s_stack*);
-	t_bool		(*empty)(struct s_stack*);
-	t_bool		(*is_sorted)(struct s_stack*);
-	t_bool		(*is_swappable)(struct s_stack *);
-	t_bool		(*is_mergeable)(struct s_stack *, const struct s_stack *);
-	t_bool		(*is_pushable)(struct s_stack*);
-}	t_stack;
+	void		(*push)(struct s_st*, long);
+	t_element	*(*pop)(struct s_st*);
+	void		(*swap)(struct s_st*);
+	void		(*rotate)(struct s_st*);
+	void		(*reverse_rotate)(struct s_st*);
+	void		(*push_to)(struct s_st*, struct s_st*);
+	void		(*clear)(struct s_st*);
+	void		(*show)(struct s_st*);
+	t_bool		(*empty)(struct s_st *);
+	t_bool		(*is_sorted)(struct s_st *);
+	t_bool		(*is_swappable)(struct s_st *);
+	t_bool		(*is_pushable)(struct s_st *);
+}				t_stack;
 
 // Stack constructors
 t_stack			*ft_new_stack(char stack_name);
@@ -79,8 +90,8 @@ size_t			ft_strlen(char *str);
 t_error			*ft_check_args(int argc, char **argv);
 t_error			*ft_sort_stack(t_stack *a, t_stack *b);
 
-t_bool	ft_is_swappable(t_list *list, t_element *element);
+t_bool			ft_is_swappable(t_list *list, t_element *element);
 
-void ft_stack_repare(t_stack *self);
+void			ft_stack_repare(t_stack *self);
 
 #endif
