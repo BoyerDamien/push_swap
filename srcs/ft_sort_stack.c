@@ -73,6 +73,8 @@ static void	merge_b_stack(t_stack *a, t_stack *b)
 
 static void	sort(t_stack *a, t_stack *b)
 {
+	a->show(a);
+	b->show(b);
 	if (ft_stack_is_mergeable(b, a))
 	{
 		b->push_to(b, a);
@@ -106,7 +108,14 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		return (ft_new_error("duplicate number"));
 	}
 	if (!a->is_sorted(a) && a->list->size <= 10)
+	{
+		if (a->list->size == 5)
+		{
+			a->push_to(a, b);
+			a->push_to(a, b);
+		}
 		sort(a, b);
+	}
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
 	ft_stack_repare(a);
