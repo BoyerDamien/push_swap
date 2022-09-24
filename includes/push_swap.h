@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 12:55:03 by dboyer            #+#    #+#             */
-/*   Updated: 2022/08/15 15:08:38 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/09/24 14:09:55 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,7 @@ t_error			*ft_sort_stack(t_stack *a, t_stack *b);
 t_bool			ft_is_swappable(t_list *list, t_element *element);
 
 void			ft_stack_repare(t_stack *self);
+
+void			ft_stack_simple_sort(t_stack *a);
 
 #endif
