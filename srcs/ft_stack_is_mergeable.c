@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <stdio.h>
 
 t_bool	ft_stack_is_mergeable(t_stack *b, const t_stack *a)
 {
@@ -20,15 +21,16 @@ t_bool	ft_stack_is_mergeable(t_stack *b, const t_stack *a)
 	long	a_first;
 
 	result = false;
+	a->list->max = ft_list_max(a->list);
+	a->list->min = ft_list_min(a->list);
+	// printf("min = %ld -- max = %ld\n", a->list->min, a->list->max);
 	if (!b->empty(b))
 	{
 		a_previous = a->list->first->previous->content;
 		a_first = a->list->first->content;
 		b_first = b->list->first->content;
-		if (a_first == a->list->max)
-			result = (b_first > a_previous && b_first < a_first);
-		else if (a_first == a->list->min)
-			result = b_first > a->list->max;
+		if (a_first == a->list->min)
+			result = b_first < a_first || b_first > a->list->max;
 		else
 			result = (b_first < a_first && b_first > a_previous);
 	}

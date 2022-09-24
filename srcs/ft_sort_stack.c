@@ -43,54 +43,52 @@ static void	radix_sort(t_stack *a, t_stack *b)
 	}
 }
 
-static t_bool	can_reverse_rotate(t_stack *a, t_stack *b)
-{
-	t_element	*first;
-	t_element	*previous;
-
-	first = a->list->first;
-	previous = first->previous;
-	return ((previous->content > first->content
-			&& previous->content != a->list->max
-			&& first->content != a->list->min)
-		|| (first->content == a->list->max && previous->content == a->list->min
-			&& a->list->size > 3) || (first->content == a->list->min
-			&& previous->content != a->list->max) || (b->list->size > 0
-			&& b->list->first->content < first->content));
-}
-
 static void	merge_b_stack(t_stack *a, t_stack *b)
 {
-	if (b->list->first->content > a->list->first->content && \
-		a->list->first->content != a->list->min)
+	if (ft_stack_is_mergeable(b, a))
+		b->push_to(b,a);
+	else if (b->list->first->content > a->list->first->content)
 		a->rotate(a);
-	else if (b->list->first->content < a->list->first->content && \
-					a->list->first->content != a->list->max)
+	else if (b->list->first->content < a->list->first->content)
 		a->reverse_rotate(a);
-	else
-		a->rotate(a);
 }
 
 static void	sort(t_stack *a, t_stack *b)
 {
-	if (ft_stack_is_mergeable(b, a))
+	// a->show(a);
+	// b->show(b);
+
+	if (!ft_is_sorted(a) && b->empty(b) && a->list->size > 3)
 	{
-		b->push_to(b, a);
-		sort(a, b);
-	}
-	else if (!ft_is_sorted(a))
-	{
-		if (a->is_swappable(a))
-			a->swap(a);
-		else if (a->is_pushable(a))
+		while (a->list->size > 3 && !ft_is_sorted(a))
 			a->push_to(a, b);
-		else if (can_reverse_rotate(a, b))
-			a->reverse_rotate(a);
-		else
-			a->rotate(a);
 		sort(a, b);
 	}
-	else if (ft_is_sorted(a) && !ft_stack_is_mergeable(b, a) && !b->empty(b))
+	else if (!ft_is_sorted(a) && a->list->size == 3)
+	{
+		t_element *first = a->list->first;
+
+		if (first->content > first->next->content && first->content < first->previous->content)
+			a->swap(a);
+		else if (first->content > first->next->content && first->content > first->previous->content)
+		{
+			if (first->next->content > first->previous->content)
+			{
+				a->swap(a);
+				a->reverse_rotate(a);
+			}
+			else
+				a->reverse_rotate(a);
+		}
+		else if (first->content < first->next->content && first->content < first->previous->content){
+			a->swap(a);
+			a->rotate(a);
+		}
+		else if (first->content < first->next->content && first->content > first->previous->content)
+			a->reverse_rotate(a);
+		sort(a, b);
+	}
+	else if (ft_is_sorted(a) && !b->empty(b))
 	{
 		merge_b_stack(a, b);
 		sort(a, b);
@@ -106,10 +104,14 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 		return (ft_new_error("duplicate number"));
 	}
 	if (!a->is_sorted(a) && a->list->size <= 10)
+	{
 		sort(a, b);
+	}
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
 	ft_stack_repare(a);
+	// a->show(a);
+	// b->show(b);
 	a->clear(a);
 	b->clear(b);
 	free(a);
