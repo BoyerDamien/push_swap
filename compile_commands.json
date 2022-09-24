@@ -630,6 +630,28 @@
       "./libs/ft_list/includes",
       "-c",
       "-o",
+      "srcs/ft_is_swappable.o",
+      "srcs/ft_is_swappable.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_is_swappable.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_is_swappable.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-std=c99",
+      "-O3",
+      "-g",
+      "-I",
+      "./includes/",
+      "-I",
+      "./libs/ft_list/includes",
+      "-c",
+      "-o",
       "srcs/main.o",
       "srcs/main.c"
     ],
@@ -906,5 +928,23 @@
     "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
     "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.c",
     "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Werror",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-I",
+      "./includes/",
+      "-c",
+      "-o",
+      "srcs/ft_get_index_reverse.o",
+      "srcs/ft_get_index_reverse.c"
+    ],
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index_reverse.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index_reverse.o"
   }
 ]
