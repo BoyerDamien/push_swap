@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/08/15 15:08:38 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/09/24 14:12:04 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static void	radix_sort(t_stack *a, t_stack *b)
 static void	merge_b_stack(t_stack *a, t_stack *b)
 {
 	if (ft_stack_is_mergeable(b, a))
-		b->push_to(b,a);
+		b->push_to(b, a);
 	else if (b->list->first->content > a->list->first->content)
 		a->rotate(a);
 	else if (b->list->first->content < a->list->first->content)
@@ -55,9 +55,6 @@ static void	merge_b_stack(t_stack *a, t_stack *b)
 
 static void	sort(t_stack *a, t_stack *b)
 {
-	// a->show(a);
-	// b->show(b);
-
 	if (!ft_is_sorted(a) && b->empty(b) && a->list->size > 3)
 	{
 		while (a->list->size > 3 && !ft_is_sorted(a))
@@ -66,26 +63,7 @@ static void	sort(t_stack *a, t_stack *b)
 	}
 	else if (!ft_is_sorted(a) && a->list->size == 3)
 	{
-		t_element *first = a->list->first;
-
-		if (first->content > first->next->content && first->content < first->previous->content)
-			a->swap(a);
-		else if (first->content > first->next->content && first->content > first->previous->content)
-		{
-			if (first->next->content > first->previous->content)
-			{
-				a->swap(a);
-				a->reverse_rotate(a);
-			}
-			else
-				a->reverse_rotate(a);
-		}
-		else if (first->content < first->next->content && first->content < first->previous->content){
-			a->swap(a);
-			a->rotate(a);
-		}
-		else if (first->content < first->next->content && first->content > first->previous->content)
-			a->reverse_rotate(a);
+		ft_stack_simple_sort(a);
 		sort(a, b);
 	}
 	else if (ft_is_sorted(a) && !b->empty(b))
@@ -110,8 +88,6 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
 	ft_stack_repare(a);
-	// a->show(a);
-	// b->show(b);
 	a->clear(a);
 	b->clear(b);
 	free(a);
