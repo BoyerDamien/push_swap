@@ -19,7 +19,7 @@ t_element	*ft_stack_pop(t_stack *self)
 
 	if (!self->empty(self))
 	{
-		result = ft_new_element(self->list->first->content);
+		result = ft_new_element_from_element(self->list->first);
 		self->list->remove(self->list, self->list->first);
 		self->list->min = ft_list_min(self->list);
 		self->list->max = ft_list_max(self->list);

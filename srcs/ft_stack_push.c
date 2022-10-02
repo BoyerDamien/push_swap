@@ -12,9 +12,9 @@
 
 #include "push_swap.h"
 
-void	ft_stack_push(t_stack *self, long element)
+void	ft_stack_push(t_stack *self, t_element *element)
 {
-	self->list->insert_before(self->list, self->list->first, element);
+	self->list->insert_before(self->list, self->list->first, element->content, element->label);
 	self->list->min = ft_list_min(self->list);
 	self->list->max = ft_list_max(self->list);
 }

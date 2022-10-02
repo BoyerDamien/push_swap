@@ -24,9 +24,9 @@ void	ft_stack_swap(t_stack *self)
 		first = self->pop(self);
 		second = self->pop(self);
 		if (first != NULL)
-			self->push(self, first->content);
+			self->push(self, first);
 		if (second != NULL)
-			self->push(self, second->content);
+			self->push(self, second);
 		free(first);
 		free(second);
 		ft_putchar('s');
