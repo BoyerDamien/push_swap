@@ -19,7 +19,7 @@ static inline void	append(t_list *list1, t_list *list2)
 	next = list2->first;
 	while (next)
 	{
-		ft_add_back(list1, next->content);
+		ft_add_back(list1, next->content, next->label);
 		next = next->next;
 	}
 }

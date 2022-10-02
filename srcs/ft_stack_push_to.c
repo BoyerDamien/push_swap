@@ -22,7 +22,7 @@ void	ft_stack_push_to(t_stack *self, t_stack *other)
 		tmp = self->pop(self);
 		if (tmp && other)
 		{
-			other->push(other, tmp->content);
+			other->push(other, tmp);
 			free(tmp);
 			ft_putchar('p');
 			ft_putchar(other->stack_name);

@@ -12,11 +12,11 @@
 
 #include "ft_list.h"
 
-void	ft_insert_before(t_list *list, t_element *element, long content)
+void	ft_insert_before(t_list *list, t_element *element, long content, long label)
 {
 	t_element	*new_elem;
 
-	new_elem = ft_new_element(content);
+	new_elem = ft_new_element(content, label);
 	if (list->size)
 	{
 		new_elem->previous = element->previous;

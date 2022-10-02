@@ -35,5 +35,6 @@ t_list	*ft_list(void)
 	new->last = ft_list_get_last;
 	new->index_of = ft_get_index;
 	new->index_of_reverse = ft_get_index_reverse;
+	new->set_labels = ft_list_set_labels;
 	return (new);
 }

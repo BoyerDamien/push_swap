@@ -27,7 +27,8 @@ SRCS 	=	srcs/ft_add_back.c\
 		srcs/ft_list_min.c\
 		srcs/ft_list_max.c\
 		srcs/ft_get_index.c\
-		srcs/ft_get_index_reverse.c
+		srcs/ft_get_index_reverse.c\
+		srcs/ft_list_set_labels.c
 
 OBJS    =       $(SRCS:.c=.o)
 HEADERS = -I ./includes/

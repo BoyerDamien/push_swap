@@ -21,7 +21,7 @@ t_list	*ft_list_copy(t_list *list)
 	next = list->first;
 	while (next)
 	{
-		new_list->append(new_list, next->content);
+		new_list->append(new_list, next->content, next->label);
 		next = next->next;
 	}
 	return (new_list);

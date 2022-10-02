@@ -18,6 +18,8 @@ static void	print_one_element(t_element *element)
 	if (element)
 	{
 		ft_putnbr(element->content);
+		ft_putstr(" -- ");
+		ft_putnbr(element->label);
 		ft_putchar('\n');
 	}
 }

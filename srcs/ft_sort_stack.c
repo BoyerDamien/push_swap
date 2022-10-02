@@ -30,11 +30,13 @@ static void	radix_sort(t_stack *a, t_stack *b)
 		j = 0;
 		while (j < size)
 		{
-			num = a->list->first->content ^ INT_MIN;
+			num = a->list->first->label ^ INT_MIN;
 			if ((num >> i) & 1)
 				a->rotate(a);
 			else
 				a->push_to(a, b);
+			// a->show(a);
+			// b->show(b);
 			j++;
 		}
 		while (!b->empty(b))
@@ -88,6 +90,7 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
 	ft_stack_repare(a);
+	// a->show(a);
 	a->clear(a);
 	b->clear(b);
 	free(a);

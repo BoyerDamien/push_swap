@@ -1,7 +1,7 @@
 [
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -17,13 +17,13 @@
       "srcs/ft_new_stack.o",
       "srcs/ft_new_stack.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_new_stack.c",
-    "output": "/workspaces/push_swap/srcs/ft_new_stack.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -39,13 +39,13 @@
       "srcs/ft_new_stack_with_args.o",
       "srcs/ft_new_stack_with_args.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_new_stack_with_args.c",
-    "output": "/workspaces/push_swap/srcs/ft_new_stack_with_args.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack_with_args.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_stack_with_args.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -61,13 +61,13 @@
       "srcs/ft_stack_push.o",
       "srcs/ft_stack_push.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_push.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_push.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -83,13 +83,13 @@
       "srcs/ft_stack_pop.o",
       "srcs/ft_stack_pop.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_pop.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_pop.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_pop.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -105,13 +105,13 @@
       "srcs/ft_stack_swap.o",
       "srcs/ft_stack_swap.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_swap.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_swap.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_swap.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -127,13 +127,13 @@
       "srcs/ft_putchar.o",
       "srcs/ft_putchar.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_putchar.c",
-    "output": "/workspaces/push_swap/srcs/ft_putchar.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putchar.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -149,13 +149,13 @@
       "srcs/ft_putstr.o",
       "srcs/ft_putstr.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_putstr.c",
-    "output": "/workspaces/push_swap/srcs/ft_putstr.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putstr.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -171,13 +171,13 @@
       "srcs/ft_stack_rotate.o",
       "srcs/ft_stack_rotate.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_rotate.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_rotate.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_rotate.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_rotate.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -193,13 +193,13 @@
       "srcs/ft_stack_reverse_rotate.o",
       "srcs/ft_stack_reverse_rotate.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_reverse_rotate.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_reverse_rotate.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_reverse_rotate.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_reverse_rotate.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -215,13 +215,13 @@
       "srcs/ft_stack_push_to.o",
       "srcs/ft_stack_push_to.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_push_to.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_push_to.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push_to.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_push_to.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -237,13 +237,13 @@
       "srcs/ft_stack_isempty.o",
       "srcs/ft_stack_isempty.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_isempty.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_isempty.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_isempty.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_isempty.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -259,13 +259,13 @@
       "srcs/ft_atoi.o",
       "srcs/ft_atoi.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_atoi.c",
-    "output": "/workspaces/push_swap/srcs/ft_atoi.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_atoi.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_atoi.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -281,13 +281,13 @@
       "srcs/ft_isspace.o",
       "srcs/ft_isspace.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_isspace.c",
-    "output": "/workspaces/push_swap/srcs/ft_isspace.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isspace.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isspace.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -303,13 +303,13 @@
       "srcs/ft_isdigit.o",
       "srcs/ft_isdigit.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_isdigit.c",
-    "output": "/workspaces/push_swap/srcs/ft_isdigit.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isdigit.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isdigit.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -325,13 +325,13 @@
       "srcs/ft_isnumber.o",
       "srcs/ft_isnumber.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_isnumber.c",
-    "output": "/workspaces/push_swap/srcs/ft_isnumber.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_isnumber.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_isnumber.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -347,13 +347,13 @@
       "srcs/ft_stack_clear.o",
       "srcs/ft_stack_clear.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_clear.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_clear.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_clear.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_clear.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -369,13 +369,13 @@
       "srcs/ft_stack_show.o",
       "srcs/ft_stack_show.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_show.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_show.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_show.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_show.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -391,13 +391,13 @@
       "srcs/ft_putnbr.o",
       "srcs/ft_putnbr.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_putnbr.c",
-    "output": "/workspaces/push_swap/srcs/ft_putnbr.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_putnbr.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_putnbr.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -413,13 +413,13 @@
       "srcs/ft_new_error.o",
       "srcs/ft_new_error.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_new_error.c",
-    "output": "/workspaces/push_swap/srcs/ft_new_error.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_new_error.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_new_error.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -435,13 +435,13 @@
       "srcs/ft_parse_args.o",
       "srcs/ft_parse_args.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_parse_args.c",
-    "output": "/workspaces/push_swap/srcs/ft_parse_args.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_parse_args.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_parse_args.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -457,13 +457,13 @@
       "srcs/ft_error_show.o",
       "srcs/ft_error_show.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_error_show.c",
-    "output": "/workspaces/push_swap/srcs/ft_error_show.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_error_show.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_error_show.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -479,13 +479,13 @@
       "srcs/ft_strlen.o",
       "srcs/ft_strlen.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_strlen.c",
-    "output": "/workspaces/push_swap/srcs/ft_strlen.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_strlen.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_strlen.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -501,13 +501,13 @@
       "srcs/ft_sort_stack.o",
       "srcs/ft_sort_stack.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_sort_stack.c",
-    "output": "/workspaces/push_swap/srcs/ft_sort_stack.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_sort_stack.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_sort_stack.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -523,13 +523,13 @@
       "srcs/ft_is_sorted.o",
       "srcs/ft_is_sorted.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_is_sorted.c",
-    "output": "/workspaces/push_swap/srcs/ft_is_sorted.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_is_sorted.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_is_sorted.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -545,13 +545,13 @@
       "srcs/ft_stack_is_swappable.o",
       "srcs/ft_stack_is_swappable.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_is_swappable.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_is_swappable.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_is_swappable.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_is_swappable.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -567,13 +567,13 @@
       "srcs/ft_stack_is_mergeable.o",
       "srcs/ft_stack_is_mergeable.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_is_mergeable.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_is_mergeable.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_is_mergeable.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_is_mergeable.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -589,13 +589,13 @@
       "srcs/ft_is_pushable.o",
       "srcs/ft_is_pushable.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_is_pushable.c",
-    "output": "/workspaces/push_swap/srcs/ft_is_pushable.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_is_pushable.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_is_pushable.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -611,13 +611,13 @@
       "srcs/ft_stack_repare.o",
       "srcs/ft_stack_repare.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_repare.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_repare.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_repare.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_repare.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -633,13 +633,13 @@
       "srcs/ft_is_swappable.o",
       "srcs/ft_is_swappable.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_is_swappable.c",
-    "output": "/workspaces/push_swap/srcs/ft_is_swappable.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_is_swappable.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_is_swappable.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -655,13 +655,13 @@
       "srcs/ft_stack_simple_sort.o",
       "srcs/ft_stack_simple_sort.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/ft_stack_simple_sort.c",
-    "output": "/workspaces/push_swap/srcs/ft_stack_simple_sort.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_simple_sort.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/ft_stack_simple_sort.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -677,13 +677,13 @@
       "srcs/main.o",
       "srcs/main.c"
     ],
-    "directory": "/workspaces/push_swap",
-    "file": "/workspaces/push_swap/srcs/main.c",
-    "output": "/workspaces/push_swap/srcs/main.o"
+    "directory": "/Users/dboyer/code/42/push_swap",
+    "file": "/Users/dboyer/code/42/push_swap/srcs/main.c",
+    "output": "/Users/dboyer/code/42/push_swap/srcs/main.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -695,13 +695,13 @@
       "srcs/ft_add_back.o",
       "srcs/ft_add_back.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_add_back.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_add_back.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_add_back.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -713,13 +713,13 @@
       "srcs/ft_clear.o",
       "srcs/ft_clear.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_clear.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_clear.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_clear.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -731,13 +731,13 @@
       "srcs/ft_concat.o",
       "srcs/ft_concat.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_concat.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_concat.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_concat.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -749,13 +749,13 @@
       "srcs/ft_del.o",
       "srcs/ft_del.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_del.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_del.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_del.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -767,13 +767,13 @@
       "srcs/ft_list_copy.o",
       "srcs/ft_list_copy.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_copy.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_copy.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_copy.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -785,13 +785,13 @@
       "srcs/ft_list_iter.o",
       "srcs/ft_list_iter.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_iter.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_iter.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -803,13 +803,13 @@
       "srcs/ft_list.o",
       "srcs/ft_list.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -821,13 +821,13 @@
       "srcs/ft_new_element.o",
       "srcs/ft_new_element.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_new_element.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_new_element.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_new_element.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -839,13 +839,13 @@
       "srcs/ft_search.o",
       "srcs/ft_search.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_search.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_search.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_search.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -857,13 +857,13 @@
       "srcs/ft_insert_before.o",
       "srcs/ft_insert_before.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_insert_before.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_insert_before.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_insert_before.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -875,13 +875,13 @@
       "srcs/ft_list_iter_ret.o",
       "srcs/ft_list_iter_ret.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_iter_ret.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_iter_ret.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter_ret.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_iter_ret.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -893,13 +893,13 @@
       "srcs/ft_list_get_last.o",
       "srcs/ft_list_get_last.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_get_last.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_get_last.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_get_last.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_get_last.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -911,13 +911,13 @@
       "srcs/ft_list_min.o",
       "srcs/ft_list_min.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_min.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_min.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_min.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_min.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -929,13 +929,13 @@
       "srcs/ft_list_max.o",
       "srcs/ft_list_max.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_max.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_list_max.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_max.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_list_max.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -947,13 +947,13 @@
       "srcs/ft_get_index.o",
       "srcs/ft_get_index.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_get_index.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_get_index.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index.o"
   },
   {
     "arguments": [
-      "/usr/sbin/gcc",
+      "/usr/bin/gcc",
       "-Werror",
       "-Wall",
       "-Wextra",
@@ -965,8 +965,8 @@
       "srcs/ft_get_index_reverse.o",
       "srcs/ft_get_index_reverse.c"
     ],
-    "directory": "/workspaces/push_swap/libs/ft_list",
-    "file": "/workspaces/push_swap/libs/ft_list/srcs/ft_get_index_reverse.c",
-    "output": "/workspaces/push_swap/libs/ft_list/srcs/ft_get_index_reverse.o"
+    "directory": "/Users/dboyer/code/42/push_swap/libs/ft_list",
+    "file": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index_reverse.c",
+    "output": "/Users/dboyer/code/42/push_swap/libs/ft_list/srcs/ft_get_index_reverse.o"
   }
 ]

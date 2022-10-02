@@ -39,7 +39,7 @@ typedef struct s_st
 	t_list		*list;
 	char		stack_name;
 
-	void		(*push)(struct s_st*, long);
+	void		(*push)(struct s_st*, t_element *);
 	t_element	*(*pop)(struct s_st*);
 	void		(*swap)(struct s_st*);
 	void		(*rotate)(struct s_st*);
@@ -57,7 +57,7 @@ t_stack			*ft_new_stack(char stack_name);
 t_stack			*ft_new_stack_with_args(char stack_name, int argc, char **argv);
 
 t_element		*ft_stack_pop(t_stack *self);
-void			ft_stack_push(t_stack *self, long element);
+void			ft_stack_push(t_stack *self, t_element *);
 void			ft_stack_swap(t_stack *self);
 void			ft_stack_rotate(t_stack *self);
 void			ft_stack_reverse_rotate(t_stack *self);
