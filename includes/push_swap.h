@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 12:55:03 by dboyer            #+#    #+#             */
-/*   Updated: 2022/09/24 14:09:55 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:05:51 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ t_stack			*ft_new_stack(char stack_name);
 t_stack			*ft_new_stack_with_args(char stack_name, int argc, char **argv);
 
 t_element		*ft_stack_pop(t_stack *self);
-void			ft_stack_push(t_stack *self, t_element *);
+void			ft_stack_push(t_stack *self, t_element *elem);
 void			ft_stack_swap(t_stack *self);
 void			ft_stack_rotate(t_stack *self);
 void			ft_stack_reverse_rotate(t_stack *self);

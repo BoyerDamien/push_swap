@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:32:33 by dboyer            #+#    #+#             */
-/*   Updated: 2022/08/15 14:40:39 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:10:26 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 typedef struct s_element
 {
 	long				content;
-    long                label;
-    struct s_element	*previous;
+	long				label;
+	struct s_element	*previous;
 	struct s_element	*next;
 }	t_element;
 
@@ -41,12 +41,13 @@ typedef struct s_list
 	int					(*index_of)(struct s_list*, long int);
 	int					(*index_of_reverse)(struct s_list*, long int);
 
-	void				(*insert_before)(struct s_list*, t_element*, long, long);
-    struct s_list       *(*set_labels)(struct s_list*);
+	void				(*insert_before)(struct s_list*, \
+		t_element*, long, long);
+	struct s_list		*(*set_labels)(struct s_list*);
 	struct s_list		*(*concat)(struct s_list*, struct s_list*);
 	struct s_list		*(*copy)(struct s_list*);
 	struct s_list		(*map)(struct s_list*, int (*f)(t_element*));
-    t_element			*(*last)(struct s_list*);
+	t_element			*(*last)(struct s_list*);
 	t_element			*(*search)(struct s_list*, long, \
 									int (*f)(t_element *, long));
 }	t_list;
@@ -67,7 +68,7 @@ t_element				*ft_search(t_list *element, long content, \
 t_element				*ft_new_element(long content, long label);
 t_element				*ft_new_element_from_element(t_element *element);
 
-t_list                  *ft_list_set_labels(t_list *self);
+t_list					*ft_list_set_labels(t_list *self);
 t_list					*ft_list(void);
 t_list					*ft_concat(t_list *list1, t_list *list2);
 t_list					*ft_list_copy(t_list *list);

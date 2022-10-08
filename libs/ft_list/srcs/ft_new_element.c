@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:17:22 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/06 14:47:48 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:12:07 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ t_element	*ft_new_element(long content, long label)
 	return (new);
 }
 
-t_element *ft_new_element_from_element(t_element *element)
+t_element	*ft_new_element_from_element(t_element *element)
 {
-	return ft_new_element(element->content, element->label);
+	return (ft_new_element(element->content, element->label));
 }
-
