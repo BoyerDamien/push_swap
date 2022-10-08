@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:04 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 13:46:28 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:52:12 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ t_stack	*ft_new_stack_with_args(char stack_name, int argc, char **argv)
 		return (new);
 	while (--argc)
 	{
-		if (new->list->search(new->list, ft_atoi(argv[argc]), is_equal) != NULL)
+		if (new->list->size && \
+			new->list->search(new->list, ft_atoi(argv[argc]), is_equal) != NULL)
 		{
 			new->clear(new);
 			free(new);
