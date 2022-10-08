@@ -6,7 +6,7 @@
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:19 by dboyer            #+#    #+#             */
-/*   Updated: 2022/09/24 14:12:04 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:06:25 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ static void	radix_sort(t_stack *a, t_stack *b)
 				a->rotate(a);
 			else
 				a->push_to(a, b);
-			// a->show(a);
-			// b->show(b);
 			j++;
 		}
 		while (!b->empty(b))
@@ -90,7 +88,6 @@ t_error	*ft_sort_stack(t_stack *a, t_stack *b)
 	else if (!a->is_sorted(a))
 		radix_sort(a, b);
 	ft_stack_repare(a);
-	// a->show(a);
 	a->clear(a);
 	b->clear(b);
 	free(a);
