@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stack_min.c                                     :+:      :+:    :+:   */
+/*   ft_list_min.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dboyer <dboyer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 10:23:33 by dboyer            #+#    #+#             */
-/*   Updated: 2022/06/18 13:39:07 by dboyer           ###   ########.fr       */
+/*   Updated: 2022/10/08 14:41:31 by dboyer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@ long int	ft_list_min(t_list *self)
 	t_element	*element;
 
 	i = 0;
-	element = self->first;
-	min = element->content;
-	if (self->size > 0)
+	min = 0;
+	if (self && self->size > 0)
 	{
+		element = self->first;
+		min = element->content;
 		while (i < self->size)
 		{
 			if (element->content < min)
